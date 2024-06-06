@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/details_onboarding.dart';
-import '../widgets/onboarding_main_image.dart';
+import 'widgets/details_onboarding.dart';
+import 'widgets/onboarding_main_image.dart';
 
 class OboardingScreen extends StatelessWidget {
   const OboardingScreen({super.key});

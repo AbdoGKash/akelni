@@ -8,4 +8,5 @@ class ColorsManager {
   static Color error = const Color(0xffe61f34);
   static Color darkGrey = const Color(0xff525252);
   static Color grey = const Color(0xff737477);
+  static Color ligtherGrey = const Color.fromARGB(255, 231, 233, 240);
 }

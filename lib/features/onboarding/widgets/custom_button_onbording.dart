@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../core/routing/routers_name.dart';
 import '../../../core/theming/colors.dart';
 import '../../../core/theming/text_styel.dart';
 
@@ -17,7 +18,9 @@ class CustomButtonOnBording extends StatelessWidget {
         ),
         height: 40.h,
         minWidth: 280.w,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, RoutersName.login);
+        },
         color: ColorsManager.primary,
         child: Text("Get Started", style: TextStyles.font16WhiteSemiBold),
       ),

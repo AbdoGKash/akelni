@@ -13,7 +13,7 @@ class _ApiService implements ApiService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://m0rgk.wiremockapi.cloud/';
+    baseUrl ??= 'https://vcare.integration25.com/api/';
   }
 
   final Dio _dio;
@@ -35,7 +35,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'client/login',
+              'auth/login',
               queryParameters: queryParameters,
               data: _data,
             )
