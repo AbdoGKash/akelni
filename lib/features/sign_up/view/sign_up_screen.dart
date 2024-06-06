@@ -2,11 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/widgets/app_text_button.dart';
+import '../logic/cubit/sign_up_cubit.dart';
 import 'widget/already_have_account_text.dart';
 import 'widget/sign_up_form.dart';
+import 'widget/sign_up_listner.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -41,12 +44,15 @@ class SignUpScreen extends StatelessWidget {
             AppTextButton(
               buttonText: 'Create Account',
               textStyle: TextStyles.font16WhiteSemiBold,
-              onPressed: () {},
+              onPressed: () {
+                context.read<SignUpCubit>().validateThenDoSignUp();
+              },
             ),
             const SizedBox(
               height: 40,
             ),
-            AlreadyHaveAccountText()
+            AlreadyHaveAccountText(),
+            SignUpListner()
           ]),
         ),
       ),
