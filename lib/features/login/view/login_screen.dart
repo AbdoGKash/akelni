@@ -57,15 +57,15 @@ class LoginScreen extends StatelessWidget {
                   },
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 50,
                 ),
                 const TermsAndConditionsText(),
                 const SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 const DontHaveAccountText(),
                 const SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 const LoginGoogleFacebook(),
                 const LoginBlocListener()
