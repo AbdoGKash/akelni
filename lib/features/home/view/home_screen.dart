@@ -4,6 +4,7 @@ import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'widget/akelni_categories_list.dart';
+import 'widget/akelni_recommendation.dart';
 import 'widget/home_top_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -34,6 +35,17 @@ class HomeScreen extends StatelessWidget {
                 height: 10,
               ),
               const AkelniCategoriesList(),
+              const SizedBox(
+                height: 20,
+              ),
+              Text(
+                "Akelni Recommendation",
+                style: TextStyles.font24BlackBold,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const AkelniRecommendation()
             ],
           ),
         ),

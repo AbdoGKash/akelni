@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/helper/images_assets.dart';
-import '../../../../core/theming/colors.dart';
 
 class AkelniCategoriesList extends StatelessWidget {
   const AkelniCategoriesList({super.key});
@@ -20,11 +18,15 @@ class AkelniCategoriesList extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20),
               child: Column(
                 children: [
-                  CircleAvatar(
-                    backgroundColor: ColorsManager.ligtherGrey,
-                    radius: 25,
-                    child: SvgPicture.asset(ImagesAssets.notifications),
-                  )
+                  SizedBox(
+                    width: 80,
+                    height: 50,
+                    child: Image.asset(
+                      ImagesAssets.offer,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  const Text("Pizza")
                 ],
               ),
             );
