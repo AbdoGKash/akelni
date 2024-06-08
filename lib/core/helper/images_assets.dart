@@ -5,4 +5,6 @@ class ImagesAssets {
   static const String onboardingSvg = "$svgsBase/onboarding.svg";
   static const String facebookSvg = "$svgsBase/facebookicon.svg";
   static const String googleSvg = "$svgsBase/googleicon.svg";
+  static const String offer = "$assetsBase/offer.png";
+  static const String notifications = "$svgsBase/notifications.svg";
 }

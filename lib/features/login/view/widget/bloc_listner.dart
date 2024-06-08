@@ -25,7 +25,7 @@ class LoginBlocListener extends StatelessWidget {
           },
           success: (loginResponse) {
             Navigator.pop(context);
-            Navigator.pushNamed(context, RoutersName.homeSreen);
+            Navigator.pushReplacementNamed(context, RoutersName.homeSreen);
           },
           error: (error) {
             setupErrorState(context, error);

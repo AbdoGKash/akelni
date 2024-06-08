@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/injection.dart';
-import 'package:flutter_application_1/features/home/home_screen.dart';
+import 'package:flutter_application_1/features/home/view/home_screen.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:flutter_application_1/features/sign_up/view/sign_up_screen.dart';
