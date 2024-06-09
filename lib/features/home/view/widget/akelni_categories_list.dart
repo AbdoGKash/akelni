@@ -1,32 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/helper/images_assets.dart';
+import '../../../../core/theming/text_styel.dart';
+import '../../data/model/home_model.dart';
 
 class AkelniCategoriesList extends StatelessWidget {
-  const AkelniCategoriesList({super.key});
+  final List<Categories?> categories;
+  const AkelniCategoriesList({super.key, required this.categories});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100.h,
+      height: 130.h,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: 5,
+          itemCount: categories.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.only(right: 20),
               child: Column(
                 children: [
-                  SizedBox(
-                    width: 80,
-                    height: 50,
-                    child: Image.asset(
-                      ImagesAssets.offer,
-                      fit: BoxFit.fill,
-                    ),
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundImage: NetworkImage(categories[index]!.image!),
                   ),
-                  const Text("Pizza")
+                  SizedBox(
+                    height: 5.h,
+                  ),
+                  Text(
+                    "${categories[index]!.title}",
+                    style: TextStyles.font20BlackBold.copyWith(fontSize: 15),
+                  )
                 ],
               ),
             );

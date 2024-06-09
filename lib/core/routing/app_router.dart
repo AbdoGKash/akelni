@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/injection.dart';
+import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter_application_1/features/home/view/home_screen.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
@@ -32,7 +33,10 @@ class AppRouter {
         );
       case RoutersName.homeSreen:
         return MaterialPageRoute(
-          builder: (_) => const HomeScreen(),
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<HomeCubit>()..getHomeData(),
+            child: const HomeScreen(),
+          ),
         );
       default:
         return MaterialPageRoute(

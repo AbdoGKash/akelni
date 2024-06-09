@@ -1,5 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_application_1/core/networking/api_service.dart';
+import 'package:flutter_application_1/core/networking/api_service_home.dart';
+import 'package:flutter_application_1/features/home/data/repo/home_repo.dart';
+import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_application_1/features/sign_up/data/repo/sign_up_repo.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
@@ -17,6 +20,11 @@ Future<void> initGetIt() async {
       () => LoginCubit(getIt())); // registerLazySingleton => error
   getIt.registerLazySingleton<SignUpRepo>(() => SignUpRepo(getIt()));
   getIt.registerFactory<SignUpCubit>(() => SignUpCubit(getIt()));
+  // ================================ home ================================ //
+  getIt.registerLazySingleton<ApiServiceHome>(
+      () => ApiServiceHome(createAndSetupDio()));
+  getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
+  getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
 }
 
 Dio createAndSetupDio() {
