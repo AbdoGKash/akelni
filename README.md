@@ -9,6 +9,9 @@ This is a native splash screen and the package used is flutter_native_splash.
 
 ![Screenshot_20240602_222251](https://github.com/AbdoGKash/akelni/assets/160290297/4fc3f325-2795-4a2c-9056-e9e042c384c8)
 
+# onboarding screen 
+![Screenshot_20240609_203646](https://github.com/AbdoGKash/akelni/assets/160290297/e8256502-5325-4da8-b28b-d92745c4fdde)
+
 # Login screen
 ![Screenshot_20240609_203656](https://github.com/AbdoGKash/akelni/assets/160290297/5a4219c3-5296-44ea-9c5d-ec08998e3544)
 
