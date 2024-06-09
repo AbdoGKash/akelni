@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/theming/colors.dart';
-import '../../../../core/theming/text_styel.dart';
-import '../../logic/cubit/home_cubit.dart';
-import '../../logic/cubit/home_state.dart';
+import '../../../../../core/theming/colors.dart';
+import '../../../../../core/theming/text_styel.dart';
+import '../../../logic/cubit/home_cubit.dart';
+import '../../../logic/cubit/home_state.dart';
 import 'akelni_categories_list.dart';
 import 'akelni_recommendation.dart';
 

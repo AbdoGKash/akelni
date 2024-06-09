@@ -12,7 +12,7 @@ class AkelniApp extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: RoutersName.homeSreen,
+        initialRoute: RoutersName.items,
         onGenerateRoute: AppRouter.generateRoute,
       ),
     );

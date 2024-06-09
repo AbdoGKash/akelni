@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/theming/text_styel.dart';
-import '../../data/model/home_model.dart';
+import '../../../../../core/theming/text_styel.dart';
+import '../../../data/model/home_model.dart';
 
 class AkelniRecommendation extends StatelessWidget {
   final List<Items> foodItems;
