@@ -10,6 +10,7 @@
 analyzer:
   errors:
     must_be_immutable: ignore
+    sort_child_properties_last: ignore
 include: package:flutter_lints/flutter.yaml
 
 linter:
