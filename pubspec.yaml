@@ -46,7 +46,9 @@ dependencies:
   get_it: ^7.7.0
   # screen size
   flutter_screenutil: ^5.9.3
-  flutter_svg: ^2.0.10+1
+  flutter_svg: ^2.0.9
+  # payment
+  flutter_paypal_checkout: ^1.0.1
 
 
 
