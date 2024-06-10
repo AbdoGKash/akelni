@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/theming/colors.dart';
 import '../../../../../core/theming/text_styel.dart';
@@ -30,15 +31,15 @@ class CategoriesAndItemsBlocBuilder extends StatelessWidget {
                 AkelniCategoriesList(
                   categories: homeDataList!,
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 20.h,
                 ),
                 Text(
                   "Akelni Recommendation",
                   style: TextStyles.font24BlackBold,
                 ),
-                const SizedBox(
-                  height: 10,
+                SizedBox(
+                  height: 10.h,
                 ),
                 AkelniRecommendation(
                   foodItems: homeDataList[0].items!,

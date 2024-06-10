@@ -7,4 +7,5 @@ class ImagesAssets {
   static const String googleSvg = "$svgsBase/googleicon.svg";
   static const String offer = "$assetsBase/offer.png";
   static const String notifications = "$svgsBase/notifications.svg";
+  static const String loading = "$assetsBase/loading.gif";
 }

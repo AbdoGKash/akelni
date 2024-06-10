@@ -13,7 +13,7 @@ class ItemsAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       foregroundColor: ColorsManager.white,
       title: Text(
-        "items",
+        "List Food",
         style: TextStyles.font16WhiteSemiBold,
       ),
     );

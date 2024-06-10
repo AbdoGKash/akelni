@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/home/view/screens/items_screen/items_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/theming/text_styel.dart';
 import '../../../data/model/home_model.dart';
@@ -19,9 +20,19 @@ class AkelniCategoriesList extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20),
               child: Column(
                 children: [
-                  CircleAvatar(
-                    radius: 40,
-                    backgroundImage: NetworkImage(categories[index]!.image!),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ItemsScreen(
+                                    items: categories[index]!.items,
+                                  )));
+                    },
+                    child: CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(categories[index]!.image!),
+                    ),
                   ),
                   SizedBox(
                     height: 5.h,
