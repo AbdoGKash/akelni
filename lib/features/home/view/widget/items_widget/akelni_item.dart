@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
+import 'package:flutter_application_1/features/home/view/screens/item_detiles/item_details.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/helper/images_assets.dart';
@@ -12,39 +13,46 @@ class AkelniItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      margin: EdgeInsetsDirectional.fromSTEB(8.w, 8.w, 8.w, 8.w),
-      padding: EdgeInsetsDirectional.all(4.w),
-      decoration: BoxDecoration(
-        color: ColorsManager.black,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: GridTile(
-        child: Container(
-            color: ColorsManager.grey,
-            child: FadeInImage.assetNetwork(
-              width: double.infinity,
-              height: double.infinity,
-              placeholder: ImagesAssets.loading,
-              image: items.image.toString(),
-              fit: BoxFit.cover,
-            )),
-        footer: Container(
-            width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.w),
-            color: Colors.black,
-            alignment: Alignment.bottomCenter,
-            child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(children: [
-                  TextSpan(
-                      text: "${items.title} \n",
-                      style: TextStyles.font16WhiteSemiBold),
-                  TextSpan(
-                      text: '${items.price} \$',
-                      style: TextStyles.font16RedBold),
-                ]))),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(20.0).w,
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ItemDetails(
+                          item: items,
+                        )));
+          },
+          child: GridTile(
+            child: Container(
+                color: ColorsManager.grey,
+                child: FadeInImage.assetNetwork(
+                  width: double.infinity,
+                  height: double.infinity,
+                  placeholder: ImagesAssets.loading,
+                  image: items.image.toString(),
+                  fit: BoxFit.cover,
+                )),
+            footer: Container(
+                width: double.infinity,
+                padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.w),
+                color: ColorsManager.primary,
+                alignment: Alignment.bottomCenter,
+                child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(children: [
+                      TextSpan(
+                          text: "${items.title} \n",
+                          style: TextStyles.font16WhiteSemiBold),
+                      TextSpan(
+                          text: '${items.price} \$',
+                          style: TextStyles.font16WhiteSemiBold),
+                    ]))),
+          ),
+        ),
       ),
     );
   }

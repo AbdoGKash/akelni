@@ -40,7 +40,7 @@ Map<String, dynamic> _$CategoriesToJson(Categories instance) =>
 Items _$ItemsFromJson(Map<String, dynamic> json) => Items(
       id: json['id'] as String?,
       title: json['title'] as String?,
-      price: json['price'] as String?,
+      price: (json['price'] as num?)?.toInt(),
       image: json['image'] as String?,
     );
 

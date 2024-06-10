@@ -32,7 +32,7 @@ class Categories {
 class Items {
   String? id;
   String? title;
-  String? price;
+  int? price;
   String? image;
 
   Items({this.id, this.title, this.price, this.image});
