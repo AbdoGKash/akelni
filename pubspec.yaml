@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   # splash screen 
   flutter_native_splash: ^2.4.0
   # state mangment
@@ -61,6 +63,9 @@ dependencies:
   dartz: ^0.10.1
   freezed: ^2.5.2
   freezed_annotation: ^2.4.1
+  url_launcher: ^6.3.0
+  font_awesome_flutter: ^10.7.0
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:
@@ -94,6 +99,9 @@ flutter:
     - assets/svgs/googleicon.svg
     - assets/svgs/notifications.svg
     - assets/images/loading.gif
+    # Lang
+    - assets/lang/ar.json
+    - assets/lang/en.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

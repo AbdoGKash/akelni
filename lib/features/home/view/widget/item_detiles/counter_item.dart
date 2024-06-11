@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 
 import '../../../../../core/theming/text_styel.dart';
 
@@ -25,7 +24,7 @@ class _CounterItemState extends State<CounterItem> {
             },
             icon: const Icon(Icons.add)),
         Text(
-          " $counter",
+          "$counter",
           style: TextStyles.font20BlackBold,
         ),
         IconButton(
