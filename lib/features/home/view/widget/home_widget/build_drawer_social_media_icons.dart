@@ -13,20 +13,28 @@ class BuildDrawerSocialMediaIcons extends StatelessWidget {
       padding: const EdgeInsetsDirectional.only(start: 16),
       child: Row(
         children: [
-          buildIcon(FontAwesomeIcons.facebook, '', Colors.blue),
+          buildIcon(
+              FontAwesomeIcons.facebook,
+              'https://www.facebook.com/profile.php?id=100007743407436',
+              Colors.blue),
           const SizedBox(
             width: 15,
           ),
-          buildIcon(FontAwesomeIcons.youtube, '', ColorsManager.red),
+          buildIcon(
+              FontAwesomeIcons.youtube,
+              'https://www.youtube.com/@abdog.kashkosh8885/videos',
+              ColorsManager.red),
           const SizedBox(
             width: 20,
           ),
-          buildIcon(FontAwesomeIcons.telegram, '',
+          buildIcon(FontAwesomeIcons.telegram, 'https://web.telegram.org/a/',
               const Color.fromARGB(255, 10, 83, 143)),
           const SizedBox(
             width: 15,
           ),
-          buildIcon(FontAwesomeIcons.whatsapp, '',
+          buildIcon(
+              FontAwesomeIcons.whatsapp,
+              'https://api.whatsapp.com/send?phone=201025598871&app',
               const Color.fromARGB(255, 70, 143, 10)),
         ],
       ),
