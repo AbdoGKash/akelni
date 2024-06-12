@@ -66,10 +66,8 @@ class ItemDetails extends StatelessWidget {
                   Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => PaypalCheckout(
                       sandboxMode: true,
-                      clientId:
-                          "AevwpbqkA6FCCwfYISqtqaj2P-lRG0RZUxXgRdi9r2Yg8tkKalpPDfaVe_ALzojFJVl0jbcJriYLRvYE",
-                      secretKey:
-                          "EL4oab11A9k1OA3VtCo2XOCSLTHDmq9neQemJpe9i4jjfcV8loxfEZc32cihFgVRJfNDoJ5sgyFcGH54",
+                      clientId: "#########################",
+                      secretKey: "#########################",
                       returnURL: "success.snippetcoder.com",
                       cancelURL: "cancel.snippetcoder.com",
                       transactions: [
