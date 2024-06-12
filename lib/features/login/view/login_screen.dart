@@ -39,13 +39,13 @@ class LoginScreen extends StatelessWidget {
                   height: 36,
                 ),
                 const EmailAndPassword(),
-                Align(
-                  alignment: AlignmentDirectional.centerEnd,
-                  child: Text(
-                    'Forgot Password ?',
-                    style: TextStyles.font13primary300,
-                  ),
-                ),
+                // Align(
+                //   alignment: AlignmentDirectional.centerEnd,
+                //   child: Text(
+                //     'Forgot Password ?',
+                //     style: TextStyles.font13primary300,
+                //   ),
+                // ),
                 const SizedBox(
                   height: 50,
                 ),

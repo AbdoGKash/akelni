@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/helper/app_strings.dart';
@@ -24,10 +25,10 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
         children: [
           AppTextFormField(
             controller: context.read<LoginCubit>().emailController,
-            hintText: AppStrings.email,
+            hintText: AppStrings.email.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.enterEmailVaild;
+                return AppStrings.enterEmailVaild.tr(context);
               }
               return null;
             },
@@ -37,10 +38,10 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
           ),
           AppTextFormField(
             controller: context.read<LoginCubit>().passwordController,
-            hintText: AppStrings.password,
+            hintText: AppStrings.password.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.enterPasswordVaild;
+                return AppStrings.enterPasswordVaild.tr(context);
               }
               return null;
             },

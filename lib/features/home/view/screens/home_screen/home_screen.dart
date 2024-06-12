@@ -4,6 +4,7 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../../core/helper/app_strings.dart';
 import '../../widget/home_widget/categories_and_items_bloc_builder.dart';
 import '../../widget/home_widget/home_top_bar.dart';
 import '../../widget/home_widget/my_drawer.dart';
@@ -30,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                "Categories".tr(context),
+                AppStrings.categories.tr(context),
                 style: TextStyles.font24BlackBold,
               ),
               const SizedBox(

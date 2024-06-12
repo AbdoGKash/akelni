@@ -43,5 +43,6 @@ class ChangeLanguageAndThemeCubit extends Cubit<ChangeLanguageAndThemeState> {
         break;
       default:
     }
+    // getSavedLanguage();
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/app_strings.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/routing/routers_name.dart';
 
 import '../../../../core/theming/colors.dart';
@@ -16,10 +18,10 @@ class AlreadyHaveAccountText extends StatelessWidget {
           textAlign: TextAlign.center,
           text: TextSpan(children: [
             TextSpan(
-                text: "Already have account ? ",
+                text: AppStrings.alreadyHaveAccount.tr(context),
                 style: TextStyles.font13BlackW300),
             TextSpan(
-                text: "Login ",
+                text: AppStrings.login.tr(context),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
                     Navigator.pushNamed(context, RoutersName.login);

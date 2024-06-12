@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/helper/app_strings.dart';
@@ -11,8 +12,9 @@ class LoginGoogleFacebook extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Align(
-            alignment: Alignment.center, child: Text(AppStrings.orSignUp)),
+        Align(
+            alignment: Alignment.center,
+            child: Text(AppStrings.orSignUp.tr(context))),
         const SizedBox(
           height: 25,
         ),

@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/app_strings.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,14 +26,14 @@ class SignUpScreen extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(
-              "Create Account",
+              AppStrings.createAccount.tr(context),
               style: TextStyles.font32primaryBold,
             ),
             SizedBox(
               height: 10,
             ),
             Text(
-              'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
+              AppStrings.welcomeDescription.tr(context),
               style: TextStyles.font14Gray200,
             ),
             const SizedBox(
@@ -42,7 +44,7 @@ class SignUpScreen extends StatelessWidget {
               height: 50,
             ),
             AppTextButton(
-              buttonText: 'Create Account',
+              buttonText: AppStrings.createAccount.tr(context),
               textStyle: TextStyles.font16WhiteSemiBold,
               onPressed: () {
                 context.read<SignUpCubit>().validateThenDoSignUp();

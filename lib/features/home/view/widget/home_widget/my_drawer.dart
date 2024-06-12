@@ -1,8 +1,10 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 
+import '../../../../../core/helper/app_strings.dart';
 import '../../../../../core/theming/colors.dart';
 import 'build_drawer_header.dart';
 import 'build_drawer_list_item.dart';
@@ -28,26 +30,29 @@ class MyDrawer extends StatelessWidget {
           ),
           BuildDrawerListItem(
             leadingIcon: Icons.person,
-            title: 'My Profile',
+            title: AppStrings.myProfile.tr(context),
             onTap: () {},
           ),
           buildDrawerListItemsDivider(),
           const ChangeLangBloc(),
           buildDrawerListItemsDivider(),
-          const BuildDrawerListItem(leadingIcon: Icons.help, title: 'Help'),
+          BuildDrawerListItem(
+            leadingIcon: Icons.help,
+            title: AppStrings.help.tr(context),
+          ),
           buildDrawerListItemsDivider(),
           const ChangeThemeBloc(),
-          const BuildDrawerListItem(
+          BuildDrawerListItem(
             leadingIcon: Icons.logout,
-            title: 'Logout',
-            trailing: SizedBox(),
+            title: AppStrings.logout.tr(context),
+            trailing: const SizedBox(),
           ),
           const SizedBox(
             height: 90,
           ),
           ListTile(
             leading: Text(
-              'Follow us',
+              AppStrings.followUs.tr(context),
               style: TextStyles.font14Gray200,
             ),
           ),

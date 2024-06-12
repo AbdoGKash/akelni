@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/app_strings.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/routing/routers_name.dart';
@@ -22,7 +24,8 @@ class CustomButtonOnBording extends StatelessWidget {
           Navigator.pushReplacementNamed(context, RoutersName.login);
         },
         color: ColorsManager.primary,
-        child: Text("Get Started", style: TextStyles.font16WhiteSemiBold),
+        child: Text(AppStrings.getStarted.tr(context),
+            style: TextStyles.font16WhiteSemiBold),
       ),
     );
   }

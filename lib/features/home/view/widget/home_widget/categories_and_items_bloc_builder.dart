@@ -3,6 +3,7 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../core/helper/app_strings.dart';
 import '../../../../../core/theming/colors.dart';
 import '../../../../../core/theming/text_styel.dart';
 import '../../../logic/cubit/home_cubit.dart';
@@ -36,7 +37,7 @@ class CategoriesAndItemsBlocBuilder extends StatelessWidget {
                   height: 20.h,
                 ),
                 Text(
-                  "Akelni Recommendation".tr(context),
+                  AppStrings.akelniRecommendation.tr(context),
                   style: TextStyles.font24BlackBold,
                 ),
                 SizedBox(

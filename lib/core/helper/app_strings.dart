@@ -24,4 +24,26 @@ class AppStrings {
   static const String password = 'Password';
   static const String enterEmailVaild = "please enter a vaild email";
   static const String enterPasswordVaild = 'please enter a vaild password';
+  static const String help = 'Help';
+  static const String ordered = "Ordered";
+  static const String myProfile = "My Profile";
+  static const String logout = "Logout";
+  static const String followUs = "Follow us";
+  static const String changeLanguage = "Change Language";
+  static const String arabic = "Arabic";
+  static const String english = "English";
+  static const String changeTheme = "Change Theme";
+  static const String lightMode = "light mode";
+  static const String darkMode = "dark mode";
+  static const String notFound = "Not Found";
+  static const String listFood = "List Food";
+  static const String hiAbdo = "Hi, Abdo!";
+  static const String howAreYou = "How are you Today ?";
+  static const String categories = "Categories";
+  static const String akelniRecommendation = "Akelni Recommendation";
+  static const String orderForFood = "Order for Food";
+  static const String getStarted = "Get Started";
+  static const String doNotHaveAccount = "Dont have account ? ";
+  static const String createAccount = "Create Account";
+  static const String alreadyHaveAccount = "Already have account ? ";
 }

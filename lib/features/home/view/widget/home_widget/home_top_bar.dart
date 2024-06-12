@@ -5,6 +5,8 @@ import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../../core/helper/app_strings.dart';
+
 class HomeTopBar extends StatelessWidget {
   const HomeTopBar({super.key});
 
@@ -16,11 +18,11 @@ class HomeTopBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Hi, Abdo!".tr(context),
+              AppStrings.hiAbdo.tr(context),
               style: TextStyles.font24BlackBold,
             ),
             Text(
-              "How are you Today ?".tr(context),
+              AppStrings.howAreYou.tr(context),
               style: TextStyles.font14Gray200,
             )
           ],

@@ -1,4 +1,13 @@
 {
+
+       "Welcome Back" : "Welcome Back",
+       "or sign up with":"or sign up with",
+       "Login" :"Login",
+       "Sign Up" : "Sign Up",
+       "Email" : "Email",
+       "password" : "password",
+       "please enter a vaild email" : "please enter a vaild email",
+       "please enter a vaild password" : "please enter a vaild password",
        "Pizza" : "Pizza",
        "Burger" : "Burger",
        "Pasta" : "Pasta",
@@ -23,6 +32,21 @@
        "Pepperoni \n" : "Pepperoni \n",
        "Meat \n" : "Meat \n",
        "Garden \n" : "Garden \n",
-       "Ordered" : "Ordered"
-       
+       "Ordered" : "Ordered",
+       "Help" : "Help",
+       "My Profile" : "My Profile",
+       "Logout" : "Logout",
+       "Follow us" : "Follow us",
+       "Change Language" : "Change Language",
+       "Arabic" : "Arabic",
+       "English" : "English",
+       "Change Theme" : "Change Theme",
+       "light mode" : "light mode",
+       "dark mode" : "dark mode",
+       "Welcome to the Food Ordering App!\n This is a comprehensive solution for managing \n food  orders online, providing a seamless and \n user-friendly experience" : 
+       "Welcome to the Food Ordering App!\n This is a comprehensive solution for managing \n food  orders online, providing a seamless and \n user-friendly experience",
+      "We're excited to have you back, can't wait to see what you've been up to since you last logged in." : 
+      "We're excited to have you back, can't wait to see what you've been up to since you last logged in."
+        
 }
+

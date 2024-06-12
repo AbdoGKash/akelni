@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

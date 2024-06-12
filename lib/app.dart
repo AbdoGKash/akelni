@@ -16,7 +16,11 @@ class AkelniApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => ChangeLanguageAndThemeCubit()
         ..getSavedLanguage()
-        ..changeTheme(ThemeState.initialTheme),
+        ..changeTheme(ThemeState.initialTheme)
+      // ..changeTheme(ThemeState.initialTheme)
+      ,
+
+      /// لو مظبتش وجبت اخرك اعمل الثيم شبه اللغه
       child: ScreenUtilInit(
         designSize: const Size(393, 852), // for figma
         minTextAdapt: true,
@@ -27,8 +31,6 @@ class AkelniApp extends StatelessWidget {
             if (state is LightTheme) {
               theme = ThemeData.light();
             } else if (state is DarkTheme) {
-              theme = ThemeData.dark();
-            } else if (state is InitialTheme) {
               theme = ThemeData.dark();
             } else {
               theme = ThemeData.light();

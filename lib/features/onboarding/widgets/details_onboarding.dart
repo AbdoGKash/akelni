@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/app_strings.dart';
 import 'package:flutter_application_1/core/helper/images_assets.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -32,14 +33,14 @@ class DetailsOnBoarding extends StatelessWidget {
               height: 10.h,
             ),
             Text(
-              "Order for Food",
+              AppStrings.orderForFood.tr(context),
               style: TextStyles.font32primaryBold,
             ),
             SizedBox(
               height: 10.h,
             ),
-            const Text(
-              AppStrings.onboardingDescription,
+            Text(
+              AppStrings.onboardingDescription.tr(context),
               textAlign: TextAlign.center,
             ),
             const CustomButtonOnBording()
