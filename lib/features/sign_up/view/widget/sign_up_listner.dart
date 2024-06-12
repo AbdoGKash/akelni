@@ -5,6 +5,8 @@ import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/helper/app_strings.dart';
+
 class SignUpListner extends StatelessWidget {
   const SignUpListner({super.key});
 
@@ -54,7 +56,7 @@ class SignUpListner extends StatelessWidget {
               Navigator.pop(context);
             },
             child: const Text(
-              'Got it',
+              AppStrings.gotIt,
             ),
           ),
         ],

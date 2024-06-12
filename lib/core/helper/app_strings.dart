@@ -46,4 +46,32 @@ class AppStrings {
   static const String doNotHaveAccount = "Dont have account ? ";
   static const String createAccount = "Create Account";
   static const String alreadyHaveAccount = "Already have account ? ";
+  static const String pleaseEnterVaildName = "Please enter a vaild name";
+  static const String pleaseEnterVaildPassword =
+      "Please enter a vaild password";
+  static const String phoneNumber = "Phone number";
+  static const String pleaseEnterVaildPhone =
+      "Please enter a vaild phone number";
+  static const String pleaseEnterVaildEmail = "Please enter a vaild email";
+  static const String passwordConfirmation = "Password confirmation";
+  static const String name = "Name";
+  static const String gotIt = 'Got it';
+  static const String byLoggingYouAgreeToYou = "By logging, you agree to our ";
+  static const String termsConditions = ' Terms & Conditions                  ';
+  static const String and = " and ";
+  static const String privacyPolicy = ' Privacy Policy';
+  static const String orderDetiles = 'Order Detiles';
+  static const String area = "Area";
+  static const String pleaseEnteArea = "Please enter area";
+  static const String street = "Street";
+  static const String pleaseEnterStreet = "please enter Street";
+  static const String homeNumber = "Home Number";
+  static const String pleaseEnterHomeNumber = "please enter home number";
+  static const String completeOrder = "Complete Order";
+  static const String price = "Price";
+  static const String delivery = "Delivery";
+  static const String totalPrice = "Total Price";
+  static const String enterAdressInformation =
+      "Please enter adress information";
+  static const String deliveryPrice = "10";
 }

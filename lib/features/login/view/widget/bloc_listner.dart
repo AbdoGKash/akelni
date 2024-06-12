@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/app_strings.dart';
 import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -55,7 +56,7 @@ class LoginBlocListener extends StatelessWidget {
               Navigator.pop(context);
             },
             child: const Text(
-              'Got it',
+              AppStrings.gotIt,
             ),
           ),
         ],

@@ -5,4 +5,5 @@ class RoutersName {
   static const String homeSreen = "/homeSreen";
   static const String items = "/items";
   static const String checkout = "/checkout";
+  static const String orderDetiles = "/orderDetiles";
 }

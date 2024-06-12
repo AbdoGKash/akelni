@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/helper/app_strings.dart';
 import '../../../../core/widgets/app_text_form_field.dart';
 
 class SignUpForm extends StatefulWidget {
@@ -23,10 +23,10 @@ class _SignUpFormState extends State<SignUpForm> {
         children: [
           AppTextFormField(
             controller: context.read<SignUpCubit>().nameController,
-            hintText: 'Name',
+            hintText: AppStrings.name,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return "Please enter a vaild name";
+                return AppStrings.pleaseEnterVaildName;
               }
               return null;
             },
@@ -36,10 +36,10 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           AppTextFormField(
             controller: context.read<SignUpCubit>().phoneNumberController,
-            hintText: 'Phone number',
+            hintText: AppStrings.phoneNumber,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return "Please enter a vaild phone number";
+                return AppStrings.pleaseEnterVaildPhone;
               }
               return null;
             },
@@ -49,10 +49,10 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           AppTextFormField(
             controller: context.read<SignUpCubit>().emaillController,
-            hintText: 'Email',
+            hintText: AppStrings.email,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return "Please enter a vaild email";
+                return AppStrings.pleaseEnterVaildEmail;
               }
               return null;
             },
@@ -72,10 +72,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     ? Icons.visibility_off
                     : Icons.visibility)),
             controller: context.read<SignUpCubit>().passwordController,
-            hintText: 'Password',
+            hintText: AppStrings.password,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return "Please enter a vaild password";
+                return AppStrings.pleaseEnterVaildPassword;
               }
               return null;
             },
@@ -97,10 +97,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     : Icons.visibility)),
             controller:
                 context.read<SignUpCubit>().passwordConfirmationController,
-            hintText: 'Password confirmation',
+            hintText: AppStrings.passwordConfirmation,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return "Please enter a vaild password";
+                return AppStrings.pleaseEnterVaildPassword;
               }
               return null;
             },

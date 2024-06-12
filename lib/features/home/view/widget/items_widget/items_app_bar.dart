@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 
 import '../../../../../core/theming/colors.dart';
 import '../../../../../core/theming/text_styel.dart';
 
 class ItemsAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const ItemsAppBar({super.key});
+  String? text;
+  ItemsAppBar({super.key, this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class ItemsAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       foregroundColor: ColorsManager.white,
       title: Text(
-        "List Food".tr(context),
+        text!,
         style: TextStyles.font16WhiteSemiBold,
       ),
     );

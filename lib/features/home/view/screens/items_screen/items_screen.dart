@@ -3,6 +3,7 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../core/helper/app_strings.dart';
 import '../../../data/model/home_model.dart';
 import '../../widget/items_widget/akelni_item.dart';
 import '../../widget/items_widget/items_app_bar.dart';
@@ -14,7 +15,9 @@ class ItemsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const ItemsAppBar(),
+      appBar: ItemsAppBar(
+        text: AppStrings.listFood.tr(context),
+      ),
       body: Padding(
           padding: const EdgeInsets.fromLTRB(10, 10, 10, 20).w,
           child: items!.isEmpty
