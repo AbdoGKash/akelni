@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/features/home/view/screens/items_screen/items_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/theming/text_styel.dart';
@@ -38,7 +39,7 @@ class AkelniCategoriesList extends StatelessWidget {
                     height: 5.h,
                   ),
                   Text(
-                    "${categories[index]!.title}",
+                    "${categories[index]!.title}".tr(context),
                     style: TextStyles.font20BlackBold.copyWith(fontSize: 15),
                   )
                 ],

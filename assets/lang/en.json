@@ -1,3 +1,28 @@
 {
-
+       "Pizza" : "Pizza",
+       "Burger" : "Burger",
+       "Pasta" : "Pasta",
+       "Drinkies" : "Drinkies",
+       "Hi, Abdo!" : "Hi, Abdo!",
+       "How are you Today ?" : "How are you Today ?",
+       "Categories" : "Categories",
+       "Akelni Recommendation" : "Akelni Recommendation",
+       "Margereta" : "Margereta",
+       "Chicken" : "Chicken",
+       "Pepperoni" : "Pepperoni",
+       "Meat" : "Meat",
+       "Garden" : "Garden",
+       "65" : "65",
+       "100" : "100",
+       "125" : "125",
+       "150" : "150",
+       "Not Found" : "Not Found",
+       "List Food" : "List Food",
+       "Margereta \n" : "Margereta \n",
+       "Chicken \n" : "Chicken \n",
+       "Pepperoni \n" : "Pepperoni \n",
+       "Meat \n" : "Meat \n",
+       "Garden \n" : "Garden \n",
+       "Ordered" : "Ordered"
+       
 }

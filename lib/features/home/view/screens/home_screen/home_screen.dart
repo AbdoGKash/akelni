@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/images_assets.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                "Categories",
+                "Categories".tr(context),
                 style: TextStyles.font24BlackBold,
               ),
               const SizedBox(

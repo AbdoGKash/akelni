@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/theming/text_styel.dart';
@@ -35,12 +36,20 @@ class AkelniRecommendation extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "${foodItems[index].title}",
+                      "${foodItems[index].title}".tr(context),
                       style: TextStyles.font20BlackBold,
                     ),
-                    Text(
-                      "${foodItems[index].price} \$",
-                      style: TextStyles.font16RedBold,
+                    Row(
+                      children: [
+                        Text(
+                          "${foodItems[index].price}".tr(context),
+                          style: TextStyles.font16RedBold,
+                        ),
+                        Text(
+                          " \$",
+                          style: TextStyles.font16RedBold,
+                        ),
+                      ],
                     ),
                   ],
                 ),

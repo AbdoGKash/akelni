@@ -1,4 +1,28 @@
 {
  
-    
+    "Pizza" : "بيتزا",
+    "Burger" : "برجر",
+    "Pasta" : "باستا",
+    "Drinkies" : "مشروبات",
+    "Hi, Abdo!" : "مرحبا ,عبدة",
+    "How are you Today ?" : "كيف حالك اليوم ؟",
+    "Categories" : "الاقسام",
+     "Akelni Recommendation" : "توصيات أكلني",
+     "Margereta" : "مرجريتا",
+     "Chicken" : "فراخ",
+     "Pepperoni" : "ببروني",
+     "Meat" : "لحمة",
+     "Garden" : "جردن",
+     "65" : "٦٥",
+     "100" : "١٠٠",
+     "125" : "١٢٥",
+     "150" : "١٥٠",
+     "Not Found" : "لا يوجد",
+     "List Food" : "قائمة الطعام",
+     "Margereta \n" : "مرجريتا \n",
+     "Chicken \n" : "فراخ \n",
+     "Pepperoni \n" : "ببروني \n",
+     "Meat \n" : "لحمة \n",
+     "Garden \n" : "جردن \n",
+     "Ordered" : "طلب"
 }

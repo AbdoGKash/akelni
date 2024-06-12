@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_application_1/features/home/view/screens/item_detiles/item_details.dart';
@@ -64,21 +65,28 @@ class _AkelniItemState extends State<AkelniItem> {
                     ),
                   ),
                   footer: Container(
-                      width: double.infinity,
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 15.w, vertical: 10.w),
-                      color: ColorsManager.primary,
-                      alignment: Alignment.bottomCenter,
-                      child: RichText(
-                          textAlign: TextAlign.center,
-                          text: TextSpan(children: [
-                            TextSpan(
-                                text: "${widget.items.title} \n",
-                                style: TextStyles.font16WhiteSemiBold),
-                            TextSpan(
-                                text: '${widget.items.price} \$',
-                                style: TextStyles.font16WhiteSemiBold),
-                          ]))),
+                    width: double.infinity,
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.w),
+                    color: ColorsManager.primary,
+                    alignment: Alignment.bottomCenter,
+                    child: RichText(
+                      textAlign: TextAlign.center,
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                              text: "${widget.items.title} \n".tr(context),
+                              style: TextStyles.font16WhiteSemiBold),
+                          TextSpan(
+                              text: '${widget.items.price}'.tr(context),
+                              style: TextStyles.font16WhiteSemiBold),
+                          TextSpan(
+                              text: " \$",
+                              style: TextStyles.font16WhiteSemiBold),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -35,7 +36,7 @@ class CategoriesAndItemsBlocBuilder extends StatelessWidget {
                   height: 20.h,
                 ),
                 Text(
-                  "Akelni Recommendation",
+                  "Akelni Recommendation".tr(context),
                   style: TextStyles.font24BlackBold,
                 ),
                 SizedBox(

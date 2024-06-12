@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,7 +20,7 @@ class ItemsScreen extends StatelessWidget {
           child: items!.isEmpty
               ? Center(
                   child: Text(
-                  "Not Found",
+                  "Not Found".tr(context),
                   style: TextStyles.font32primaryBold,
                 ))
               : GridView.builder(
