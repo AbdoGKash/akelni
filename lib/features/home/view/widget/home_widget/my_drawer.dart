@@ -8,6 +8,7 @@ import 'build_drawer_header.dart';
 import 'build_drawer_list_item.dart';
 import 'build_drawer_social_media_icons.dart';
 import 'change_lang_bloc.dart';
+import 'change_theme_bloc.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -35,6 +36,7 @@ class MyDrawer extends StatelessWidget {
           buildDrawerListItemsDivider(),
           const BuildDrawerListItem(leadingIcon: Icons.help, title: 'Help'),
           buildDrawerListItemsDivider(),
+          const ChangeThemeBloc(),
           const BuildDrawerListItem(
             leadingIcon: Icons.logout,
             title: 'Logout',
