@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/theme_enum.dart';
+import 'package:flutter_application_1/core/injection.dart';
 import 'package:flutter_application_1/core/routing/app_router.dart';
 import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,9 +15,9 @@ class AkelniApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => ChangeLanguageAndThemeCubit()
-        ..getSavedLanguage()
-        ..changeTheme(ThemeState.initialTheme),
+      create: (context) => getIt<ChangeLanguageAndThemeCubit>(),
+      // ..getSavedLanguage()
+      // ..changeTheme(ThemeState.initialTheme),
       child: ScreenUtilInit(
         designSize: const Size(393, 852), // for figma
         minTextAdapt: true,
@@ -38,7 +39,6 @@ class AkelniApp extends StatelessWidget {
             } else {
               locale = const Locale('en');
             }
-
             return MaterialApp(
               theme: theme,
               locale: locale,

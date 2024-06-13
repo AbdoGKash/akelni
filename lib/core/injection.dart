@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_application_1/core/networking/api_service.dart';
 import 'package:flutter_application_1/core/networking/api_service_home.dart';
+import 'package:flutter_application_1/features/chang_language_and_theme/chang_lang_cubit.dart';
 import 'package:flutter_application_1/features/home/data/repo/home_repo.dart';
 import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_application_1/features/sign_up/data/repo/sign_up_repo.da
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:get_it/get_it.dart';
 
+import '../features/internet_connection/internet_connection_cubit.dart';
 import '../features/login/data/repo/login_repo.dart';
 
 final getIt = GetIt.instance;
@@ -25,6 +27,10 @@ Future<void> initGetIt() async {
       () => ApiServiceHome(createAndSetupDio()));
   getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
   getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
+  getIt.registerFactory<ChangeLanguageAndThemeCubit>(
+      () => ChangeLanguageAndThemeCubit(getIt()));
+  getIt.registerLazySingleton<InternetConnectionCubit>(
+      () => InternetConnectionCubit(getIt()));
 }
 
 Dio createAndSetupDio() {

@@ -8,4 +8,5 @@ class ImagesAssets {
   static const String offer = "$assetsBase/offer.png";
   static const String notifications = "$svgsBase/notifications.svg";
   static const String loading = "$assetsBase/loading.gif";
+  static const String noInternet = "$assetsBase/noNet.gif";
 }

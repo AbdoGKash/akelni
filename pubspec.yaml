@@ -66,6 +66,7 @@ dependencies:
   url_launcher: ^6.3.0
   font_awesome_flutter: ^10.7.0
   shared_preferences: ^2.2.3
+  connectivity_plus: ^6.0.3
 
 dev_dependencies:
   flutter_test:
@@ -99,6 +100,7 @@ flutter:
     - assets/svgs/googleicon.svg
     - assets/svgs/notifications.svg
     - assets/images/loading.gif
+    - assets/images/noNet.gif
     # Lang
     - assets/lang/ar.json
     - assets/lang/en.json
