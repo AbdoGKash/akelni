@@ -132,7 +132,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
                       : searchedForItems.length,
                   itemBuilder: (context, index) {
                     return AkelniItem(
-                      items: _searchTextController.text.isEmpty
+                      item: _searchTextController.text.isEmpty
                           ? widget.items![index]
                           : searchedForItems[index],
                     );

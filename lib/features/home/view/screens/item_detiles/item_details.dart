@@ -4,7 +4,6 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
-import 'package:flutter_application_1/features/order_detiles/order_detiles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/widgets/app_text_button.dart';
@@ -63,12 +62,8 @@ class ItemDetails extends StatelessWidget {
                 buttonText: AppStrings.ordered.tr(context),
                 textStyle: TextStyles.font16WhiteSemiBold,
                 onPressed: () async {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => OrderDetiles(
-                                item: item,
-                              )));
+                  Navigator.pushNamed(context, RoutersName.orderDetiles,
+                      arguments: item);
                 },
               ),
             )

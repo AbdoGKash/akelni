@@ -8,6 +8,7 @@ import 'package:flutter_application_1/features/sign_up/data/repo/sign_up_repo.da
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:get_it/get_it.dart';
 
+import '../features/chang_language_and_theme/chang_lang_cubit.dart';
 import '../features/internet_connection/internet_connection_cubit.dart';
 import '../features/login/data/repo/login_repo.dart';
 
@@ -26,10 +27,10 @@ Future<void> initGetIt() async {
       () => ApiServiceHome(createAndSetupDio()));
   getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
   getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
-  // getIt.registerFactory<ChangeLanguageAndThemeCubit>(
-  //     () => ChangeLanguageAndThemeCubit(getIt()));
-  // getIt.registerLazySingleton<InternetConnectionCubit>(
-  //     () => InternetConnectionCubit(getIt()));
+  getIt.registerFactory<ChangeLanguageAndThemeCubit>(
+      () => ChangeLanguageAndThemeCubit());
+  getIt.registerFactory<InternetConnectionCubit>(
+      () => InternetConnectionCubit());
 }
 
 Dio createAndSetupDio() {

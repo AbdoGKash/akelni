@@ -48,5 +48,15 @@
     "Welcome to the Food Ordering App!\n This is a comprehensive solution for managing \n food  orders online, providing a seamless and \n user-friendly experience" : 
     "مرحبًا بك في تطبيق طلب الطعام! \n في هذا هو الحل الشامل لإدارة أوامر الطعام عبر الإنترنت ، مما يوفر تجربة سهلة الاستخدام سلسة \n",
     "We're excited to have you back, can't wait to see what you've been up to since you last logged in." : 
-    "نحن متحمسون لعودتك، ولا يمكننا الانتظار لنرى ما الذي قمت به منذ آخر مرة قمت فيها بتسجيل الدخول."
+    "نحن متحمسون لعودتك، ولا يمكننا الانتظار لنرى ما الذي قمت به منذ آخر مرة قمت فيها بتسجيل الدخول.",
+    "Price": "السعر",
+    "Delivery": "التوصيل",
+    "Total Price": "السعر الكلي",
+    "Complete Order": "اكمال الطلب",
+    "Area" : "المنطقه",
+    "Street name" : "اسم الشارع",
+    "Home Number" :"رقم المنزل",
+    "Order Detiles" : "تفاصيل الطلب",
+    "Please enter your address" : "برجاء ادخال  عنوانك",
+    "Payment using payPal" : "الدفع باستخدام بي بال"
 }

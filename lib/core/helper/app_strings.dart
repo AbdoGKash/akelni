@@ -66,7 +66,7 @@ class AppStrings {
   static const String orderDetiles = 'Order Detiles';
   static const String area = "Area";
   static const String pleaseEnteArea = "Please enter area";
-  static const String street = "Street";
+  static const String street = "Street name";
   static const String pleaseEnterStreet = "please enter Street";
   static const String homeNumber = "Home Number";
   static const String pleaseEnterHomeNumber = "please enter home number";
@@ -75,9 +75,8 @@ class AppStrings {
   static const String delivery = "Delivery";
   static const String totalPrice = "Total Price";
 
-  static const String enterAdressInformation =
-      "Please enter adress information";
-
+  static const String enterAdressInformation = "Please enter your address";
+  static const String paymentUsingPayPal = "Payment using payPal";
   static const String deliveryPrice = "10";
   static const String findAItem = 'Find a item ...';
   static const String offer = "50% OFF";

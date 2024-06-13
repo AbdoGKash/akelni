@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/injection.dart';
+import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter_application_1/features/home/view/screens/home_screen/home_screen.dart';
+import 'package:flutter_application_1/features/home/view/screens/item_detiles/item_details.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_application_1/features/order_detiles/order_detiles.dart';
 import 'package:flutter_application_1/features/paypal/paypal_check_out.dart';
@@ -44,22 +46,29 @@ class AppRouter {
               ),
               BlocProvider(
                 create: (context) =>
-                    InternetConnectionCubit()..connectionInternet(),
-                // getIt<InternetConnectionCubit>()..connectionInternet(),
+                    getIt<InternetConnectionCubit>()..connectionInternet(),
               ),
             ],
             child: const HomeScreen(),
           ),
         );
-      case RoutersName.items:
-        // final items = settings.arguments as Items;
+      case RoutersName.itemsScreen:
+        final items = settings.arguments as List<Items>;
         return MaterialPageRoute(
-          builder: (_) => const ItemsScreen(),
+          builder: (_) => ItemsScreen(
+            items: items,
+          ),
         );
-      // case RoutersName.orderDetiles:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const OrderDetiles(item: null,),
-      //   );
+      case RoutersName.itemsDetilsScreen:
+        final item = settings.arguments as Items;
+        return MaterialPageRoute(builder: (_) => ItemDetails(item: item));
+      case RoutersName.orderDetiles:
+        final item = settings.arguments as Items;
+        return MaterialPageRoute(
+          builder: (_) => OrderDetiles(
+            item: item,
+          ),
+        );
       case RoutersName.checkout:
         return MaterialPageRoute(
           builder: (_) => const CheckoutPage(),

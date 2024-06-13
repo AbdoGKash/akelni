@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
-import 'package:flutter_application_1/features/home/view/screens/items_screen/items_screen.dart';
+import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/theming/text_styel.dart';
 import '../../../data/model/home_model.dart';
@@ -23,12 +23,8 @@ class AkelniCategoriesList extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ItemsScreen(
-                                    items: categories[index]!.items,
-                                  )));
+                      Navigator.pushNamed(context, RoutersName.itemsScreen,
+                          arguments: categories[index]!.items);
                     },
                     child: CircleAvatar(
                       radius: 40,

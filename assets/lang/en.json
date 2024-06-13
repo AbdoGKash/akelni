@@ -48,7 +48,17 @@
        "Welcome to the Food Ordering App!\n This is a comprehensive solution for managing \n food  orders online, providing a seamless and \n user-friendly experience" : 
        "Welcome to the Food Ordering App!\n This is a comprehensive solution for managing \n food  orders online, providing a seamless and \n user-friendly experience",
       "We're excited to have you back, can't wait to see what you've been up to since you last logged in." : 
-      "We're excited to have you back, can't wait to see what you've been up to since you last logged in."
+      "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
+      "Price": "Price",
+      "Delivery": "Delivery",
+      "Total Price": "Total Price",
+      "Complete Order": "Complete Order",
+      "Area" : "Area",
+      "Street name" : "Street name",
+      "Home Number" :"Home Number",
+      "Order Detiles" : "Order Detiles",
+      "Please enter your address" : "Please enter your address",
+      "Payment using payPal" : "Payment using payPal"
         
 }
 

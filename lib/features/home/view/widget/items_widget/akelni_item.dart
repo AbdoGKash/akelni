@@ -2,17 +2,17 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
+import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
-import 'package:flutter_application_1/features/home/view/screens/item_detiles/item_details.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/helper/images_assets.dart';
 import '../../../../../core/theming/text_styel.dart';
 
 class AkelniItem extends StatefulWidget {
-  final Items items;
-  const AkelniItem({super.key, required this.items});
+  final Items item;
+  const AkelniItem({super.key, required this.item});
 
   @override
   State<AkelniItem> createState() => _AkelniItemState();
@@ -39,12 +39,14 @@ class _AkelniItemState extends State<AkelniItem> {
         borderRadius: BorderRadius.circular(20.0).w,
         child: InkWell(
           onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => ItemDetails(
-                          item: widget.items,
-                        )));
+            Navigator.pushNamed(context, RoutersName.itemsDetilsScreen,
+                arguments: widget.item);
+            // Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => ItemDetails(
+            //               item: widget.items,
+            //             )));
           },
           child: _isLoading
               ? Image.asset(
@@ -60,7 +62,7 @@ class _AkelniItemState extends State<AkelniItem> {
                       width: double.infinity,
                       height: double.infinity,
                       placeholder: ImagesAssets.loading,
-                      image: widget.items.image.toString(),
+                      image: widget.item.image.toString(),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -75,10 +77,10 @@ class _AkelniItemState extends State<AkelniItem> {
                       text: TextSpan(
                         children: [
                           TextSpan(
-                              text: "${widget.items.title} \n".tr(context),
+                              text: "${widget.item.title} \n".tr(context),
                               style: TextStyles.font16WhiteSemiBold),
                           TextSpan(
-                              text: '${widget.items.price}'.tr(context),
+                              text: '${widget.item.price}'.tr(context),
                               style: TextStyles.font16WhiteSemiBold),
                           TextSpan(
                               text: " \$",
