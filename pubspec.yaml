@@ -100,7 +100,8 @@ flutter:
     - assets/svgs/googleicon.svg
     - assets/svgs/notifications.svg
     - assets/images/loading.gif
-    - assets/images/noNet.gif
+    - assets/images/noNet.png
+    - assets/images/pizza.png
     # Lang
     - assets/lang/ar.json
     - assets/lang/en.json

@@ -5,9 +5,8 @@ part 'internet_connection_state.dart';
 
 class InternetConnectionCubit extends Cubit<InternetConnectionState> {
   StreamSubscription<List<ConnectivityResult>>? _streamSubscription;
-
-  InternetConnectionCubit(this._streamSubscription)
-      : super(InternetConnection());
+  // InternetConnectionCubit(this._streamSubscription)
+  InternetConnectionCubit() : super(InternetConnection());
 
   void connectionInternet() {
     _streamSubscription =

@@ -3,6 +3,7 @@ class AppStrings {
       "Welcome to the Food Ordering App!\n This is a comprehensive solution for managing \n food  orders online, providing a seamless and \n user-friendly experience";
   static const String welcomeDescription =
       'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.';
+
   static const String badRequestError = "bad_request_error";
   static const String noContent = "no_content";
   static const String success = "success";
@@ -47,11 +48,13 @@ class AppStrings {
   static const String createAccount = "Create Account";
   static const String alreadyHaveAccount = "Already have account ? ";
   static const String pleaseEnterVaildName = "Please enter a vaild name";
+
   static const String pleaseEnterVaildPassword =
       "Please enter a vaild password";
   static const String phoneNumber = "Phone number";
   static const String pleaseEnterVaildPhone =
       "Please enter a vaild phone number";
+
   static const String pleaseEnterVaildEmail = "Please enter a vaild email";
   static const String passwordConfirmation = "Password confirmation";
   static const String name = "Name";
@@ -71,8 +74,13 @@ class AppStrings {
   static const String price = "Price";
   static const String delivery = "Delivery";
   static const String totalPrice = "Total Price";
+
   static const String enterAdressInformation =
       "Please enter adress information";
+
   static const String deliveryPrice = "10";
   static const String findAItem = 'Find a item ...';
+  static const String offer = "50% OFF";
+  static const String offerItems = "All Pizza and Pasta";
+  static const String pleaseCheckInternet = "please check internet";
 }

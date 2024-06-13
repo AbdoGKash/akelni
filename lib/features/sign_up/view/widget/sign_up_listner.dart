@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
@@ -55,8 +56,8 @@ class SignUpListner extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
-            child: const Text(
-              AppStrings.gotIt,
+            child: Text(
+              AppStrings.gotIt.tr(context),
             ),
           ),
         ],

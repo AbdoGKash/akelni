@@ -29,7 +29,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
       controller: _searchTextController,
       cursorColor: ColorsManager.white,
       decoration: InputDecoration(
-        hintText: AppStrings.findAItem,
+        hintText: AppStrings.findAItem.tr(context),
         border: InputBorder.none,
         hintStyle: TextStyles.font16WhiteSemiBold,
       ),

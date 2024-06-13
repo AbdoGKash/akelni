@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/theme_enum.dart';
-import 'package:flutter_application_1/core/injection.dart';
 import 'package:flutter_application_1/core/routing/app_router.dart';
 import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

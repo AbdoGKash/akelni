@@ -25,7 +25,7 @@ class DontHaveAccountText extends StatelessWidget {
                   ..onTap = () {
                     Navigator.pushNamed(context, RoutersName.signUp);
                   },
-                text: AppStrings.signUp,
+                text: AppStrings.signUp.tr(context),
                 style: TextStyles.font13BlackBold
                     .copyWith(color: ColorsManager.primary))
           ])),

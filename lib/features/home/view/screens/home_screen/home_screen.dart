@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/core/helper/images_assets.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/helper/app_strings.dart';
+import '../../../../../core/helper/images_assets.dart';
+import '../../../../internet_connection/internet_connection_cubit.dart';
 import '../../widget/home_widget/categories_and_items_bloc_builder.dart';
+import '../../widget/home_widget/custom_banner.dart';
 import '../../widget/home_widget/home_top_bar.dart';
 import '../../widget/home_widget/my_drawer.dart';
 
@@ -19,26 +21,53 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           margin: const EdgeInsets.all(20).w,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const HomeTopBar(),
-              const SizedBox(
-                height: 20,
-              ),
-              Image.asset(ImagesAssets.offer),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                AppStrings.categories.tr(context),
-                style: TextStyles.font24BlackBold,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const CategoriesAndItemsBlocBuilder()
-            ],
+          child: BlocBuilder<InternetConnectionCubit, InternetConnectionState>(
+            builder: (context, state) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const HomeTopBar(),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  const CustomBanner(),
+                  SizedBox(
+                    height: 20.h,
+                  ),
+                  Text(
+                    AppStrings.categories.tr(context),
+                    style: TextStyles.font24BlackBold,
+                  ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  BlocBuilder<InternetConnectionCubit, InternetConnectionState>(
+                    builder: (context, state) {
+                      if (state is ConnectedState) {
+                        return const CategoriesAndItemsBlocBuilder();
+                      } else if (state is NotConnectedState) {
+                        return Center(
+                          child: Column(
+                            children: [
+                              SizedBox(
+                                height: 300.h,
+                                width: 300.w,
+                                child: Image.asset(ImagesAssets.noInternet),
+                              ),
+                              Text(
+                                AppStrings.pleaseCheckInternet,
+                                style: TextStyles.font16RedBold,
+                              )
+                            ],
+                          ),
+                        );
+                      }
+                      return const SizedBox.shrink();
+                    },
+                  )
+                ],
+              );
+            },
           ),
         ),
       ),

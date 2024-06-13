@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,10 +24,10 @@ class _SignUpFormState extends State<SignUpForm> {
         children: [
           AppTextFormField(
             controller: context.read<SignUpCubit>().nameController,
-            hintText: AppStrings.name,
+            hintText: AppStrings.name.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildName;
+                return AppStrings.pleaseEnterVaildName.tr(context);
               }
               return null;
             },
@@ -36,10 +37,10 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           AppTextFormField(
             controller: context.read<SignUpCubit>().phoneNumberController,
-            hintText: AppStrings.phoneNumber,
+            hintText: AppStrings.phoneNumber.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildPhone;
+                return AppStrings.pleaseEnterVaildPhone.tr(context);
               }
               return null;
             },
@@ -49,10 +50,10 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           AppTextFormField(
             controller: context.read<SignUpCubit>().emaillController,
-            hintText: AppStrings.email,
+            hintText: AppStrings.email.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildEmail;
+                return AppStrings.pleaseEnterVaildEmail.tr(context);
               }
               return null;
             },
@@ -72,10 +73,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     ? Icons.visibility_off
                     : Icons.visibility)),
             controller: context.read<SignUpCubit>().passwordController,
-            hintText: AppStrings.password,
+            hintText: AppStrings.password.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildPassword;
+                return AppStrings.pleaseEnterVaildPassword.tr(context);
               }
               return null;
             },
@@ -97,10 +98,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     : Icons.visibility)),
             controller:
                 context.read<SignUpCubit>().passwordConfirmationController,
-            hintText: AppStrings.passwordConfirmation,
+            hintText: AppStrings.passwordConfirmation.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildPassword;
+                return AppStrings.pleaseEnterVaildPassword.tr(context);
               }
               return null;
             },

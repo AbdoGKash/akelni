@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_application_1/core/networking/api_service.dart';
 import 'package:flutter_application_1/core/networking/api_service_home.dart';
-import 'package:flutter_application_1/features/chang_language_and_theme/chang_lang_cubit.dart';
 import 'package:flutter_application_1/features/home/data/repo/home_repo.dart';
 import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dart';
@@ -29,8 +28,8 @@ Future<void> initGetIt() async {
   getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
   // getIt.registerFactory<ChangeLanguageAndThemeCubit>(
   //     () => ChangeLanguageAndThemeCubit(getIt()));
-  getIt.registerLazySingleton<InternetConnectionCubit>(
-      () => InternetConnectionCubit(getIt()));
+  // getIt.registerLazySingleton<InternetConnectionCubit>(
+  //     () => InternetConnectionCubit(getIt()));
 }
 
 Dio createAndSetupDio() {

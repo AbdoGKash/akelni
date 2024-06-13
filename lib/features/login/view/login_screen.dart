@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/app_strings.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/theming/text_styel.dart';
@@ -25,14 +26,14 @@ class LoginScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  AppStrings.wlcomeBack,
+                  AppStrings.wlcomeBack.tr(context),
                   style: TextStyles.font24primaryBold,
                 ),
                 const SizedBox(
                   height: 8,
                 ),
                 Text(
-                  AppStrings.welcomeDescription,
+                  AppStrings.welcomeDescription.tr(context),
                   style: TextStyles.font14Gray200,
                 ),
                 const SizedBox(
@@ -43,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                   height: 50,
                 ),
                 AppTextButton(
-                  buttonText: AppStrings.login,
+                  buttonText: AppStrings.login.tr(context),
                   textStyle: TextStyles.font16WhiteSemiBold,
                   onPressed: () {
                     context.read<LoginCubit>().validateThenDoLogin(context);

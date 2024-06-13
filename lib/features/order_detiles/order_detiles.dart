@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/helper/app_strings.dart';
@@ -19,7 +20,7 @@ class OrderDetiles extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ItemsAppBar(
-        text: AppStrings.orderDetiles,
+        text: AppStrings.orderDetiles.tr(context),
       ),
       body: SafeArea(
         child: Padding(
@@ -39,17 +40,17 @@ class OrderDetiles extends StatelessWidget {
                   height: 20.h,
                 ),
                 Text(
-                  AppStrings.enterAdressInformation,
+                  AppStrings.enterAdressInformation.tr(context),
                   style: TextStyles.font20BlackBold,
                 ),
                 SizedBox(
                   height: 20.h,
                 ),
                 AppTextFormField(
-                  hintText: AppStrings.area,
+                  hintText: AppStrings.area.tr(context),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppStrings.pleaseEnteArea;
+                      return AppStrings.pleaseEnteArea.tr(context);
                     }
                     return null;
                   },
@@ -58,10 +59,10 @@ class OrderDetiles extends StatelessWidget {
                   height: 30.h,
                 ),
                 AppTextFormField(
-                  hintText: AppStrings.street,
+                  hintText: AppStrings.street.tr(context),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppStrings.pleaseEnterStreet;
+                      return AppStrings.pleaseEnterStreet.tr(context);
                     }
                     return null;
                   },
@@ -71,10 +72,10 @@ class OrderDetiles extends StatelessWidget {
                 ),
                 AppTextFormField(
                   keyboardType: TextInputType.number,
-                  hintText: AppStrings.homeNumber,
+                  hintText: AppStrings.homeNumber.tr(context),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppStrings.pleaseEnterHomeNumber;
+                      return AppStrings.pleaseEnterHomeNumber.tr(context);
                     }
                     return null;
                   },
@@ -89,7 +90,7 @@ class OrderDetiles extends StatelessWidget {
                   height: 10.h,
                 ),
                 AppTextButton(
-                  buttonText: AppStrings.completeOrder,
+                  buttonText: AppStrings.completeOrder.tr(context),
                   textStyle: TextStyles.font16WhiteSemiBold,
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(

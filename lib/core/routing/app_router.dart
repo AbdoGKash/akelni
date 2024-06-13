@@ -9,6 +9,7 @@ import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit
 import 'package:flutter_application_1/features/sign_up/view/sign_up_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../features/home/view/screens/items_screen/items_screen.dart';
+import '../../features/internet_connection/internet_connection_cubit.dart';
 import '../../features/login/view/login_screen.dart';
 import '../../features/onboarding/oboarding_screen.dart';
 import 'routers_name.dart';
@@ -36,8 +37,17 @@ class AppRouter {
         );
       case RoutersName.homeSreen:
         return MaterialPageRoute(
-          builder: (_) => BlocProvider(
-            create: (context) => getIt<HomeCubit>()..getHomeData(),
+          builder: (_) => MultiBlocProvider(
+            providers: [
+              BlocProvider(
+                create: (context) => getIt<HomeCubit>()..getHomeData(),
+              ),
+              BlocProvider(
+                create: (context) =>
+                    InternetConnectionCubit()..connectionInternet(),
+                // getIt<InternetConnectionCubit>()..connectionInternet(),
+              ),
+            ],
             child: const HomeScreen(),
           ),
         );

@@ -9,6 +9,11 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: ColorsManager.grey,
   );
+  static TextStyle font24WhiteBold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorsManager.white,
+  );
   static TextStyle font24primaryBold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.bold,
