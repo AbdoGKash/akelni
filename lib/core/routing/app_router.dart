@@ -44,7 +44,7 @@ class AppRouter {
       case RoutersName.items:
         // final items = settings.arguments as Items;
         return MaterialPageRoute(
-          builder: (_) => ItemsScreen(),
+          builder: (_) => const ItemsScreen(),
         );
       // case RoutersName.orderDetiles:
       //   return MaterialPageRoute(

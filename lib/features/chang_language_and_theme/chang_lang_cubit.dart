@@ -8,7 +8,7 @@ import '../../core/helper/theme_enum.dart';
 part 'chang_lang_state.dart';
 
 class ChangeLanguageAndThemeCubit extends Cubit<ChangeLanguageAndThemeState> {
-  ChangeLanguageAndThemeCubit(Object object) : super(ChangeLanguageAndTheme());
+  ChangeLanguageAndThemeCubit() : super(ChangeLanguageAndTheme());
 
   Future<void> getSavedLanguage() async {
     final String cachedLanguageCode =

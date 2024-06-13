@@ -15,9 +15,9 @@ class AkelniApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => getIt<ChangeLanguageAndThemeCubit>(),
-      // ..getSavedLanguage()
-      // ..changeTheme(ThemeState.initialTheme),
+      create: (context) => ChangeLanguageAndThemeCubit()
+        ..getSavedLanguage()
+        ..changeTheme(ThemeState.initialTheme),
       child: ScreenUtilInit(
         designSize: const Size(393, 852), // for figma
         minTextAdapt: true,

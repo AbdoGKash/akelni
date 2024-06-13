@@ -27,8 +27,8 @@ Future<void> initGetIt() async {
       () => ApiServiceHome(createAndSetupDio()));
   getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
   getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
-  getIt.registerFactory<ChangeLanguageAndThemeCubit>(
-      () => ChangeLanguageAndThemeCubit(getIt()));
+  // getIt.registerFactory<ChangeLanguageAndThemeCubit>(
+  //     () => ChangeLanguageAndThemeCubit(getIt()));
   getIt.registerLazySingleton<InternetConnectionCubit>(
       () => InternetConnectionCubit(getIt()));
 }
