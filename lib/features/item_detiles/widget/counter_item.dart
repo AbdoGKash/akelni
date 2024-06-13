@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/theming/text_styel.dart';
+import '../../../core/theming/text_styel.dart';
 
 class CounterItem extends StatefulWidget {
   const CounterItem({super.key});

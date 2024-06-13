@@ -7,8 +7,8 @@ import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../core/helper/images_assets.dart';
-import '../../../../../core/theming/text_styel.dart';
+import '../../../core/helper/images_assets.dart';
+import '../../../core/theming/text_styel.dart';
 
 class AkelniItem extends StatefulWidget {
   final Items item;

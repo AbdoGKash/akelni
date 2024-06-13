@@ -6,8 +6,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/helper/app_strings.dart';
 import '../../../../../core/theming/colors.dart';
 import '../../../../../core/theming/text_styel.dart';
-import '../../../logic/cubit/home_cubit.dart';
-import '../../../logic/cubit/home_state.dart';
+
+import '../../logic/cubit/home_cubit.dart';
+import '../../logic/cubit/home_state.dart';
 import 'akelni_categories_list.dart';
 import 'akelni_recommendation.dart';
 

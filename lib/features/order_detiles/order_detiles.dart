@@ -10,7 +10,7 @@ import '../../core/theming/text_styel.dart';
 import '../../core/widgets/app_text_button.dart';
 import '../../core/widgets/app_text_form_field.dart';
 import '../home/data/model/home_model.dart';
-import '../home/view/widget/items_widget/items_app_bar.dart';
+import '../items_screen/widget/items_app_bar.dart';
 import 'widget/card_and_price.dart';
 import 'widget/coustom_card.dart';
 

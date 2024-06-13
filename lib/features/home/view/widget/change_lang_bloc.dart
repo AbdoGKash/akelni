@@ -3,7 +3,7 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/helper/app_strings.dart';
-import '../../../../chang_language_and_theme/chang_lang_cubit.dart';
+import '../../../chang_language_and_theme/chang_lang_cubit.dart';
 import 'build_drawer_list_item.dart';
 
 class ChangeLangBloc extends StatelessWidget {

@@ -6,8 +6,8 @@ import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../core/widgets/app_text_button.dart';
-import '../../widget/item_detiles/counter_item.dart';
+import '../../core/widgets/app_text_button.dart';
+import 'widget/counter_item.dart';
 
 class ItemDetails extends StatelessWidget {
   final Items item;

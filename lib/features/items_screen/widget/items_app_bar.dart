@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/theming/colors.dart';
-import '../../../../../core/theming/text_styel.dart';
+import '../../../core/theming/colors.dart';
+import '../../../core/theming/text_styel.dart';
 
 class ItemsAppBar extends StatelessWidget implements PreferredSizeWidget {
   String? text;

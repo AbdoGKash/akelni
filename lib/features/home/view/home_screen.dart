@@ -3,13 +3,13 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../core/helper/app_strings.dart';
-import '../../../../../core/helper/images_assets.dart';
-import '../../../../internet_connection/internet_connection_cubit.dart';
-import '../../widget/home_widget/categories_and_items_bloc_builder.dart';
-import '../../widget/home_widget/custom_banner.dart';
-import '../../widget/home_widget/home_top_bar.dart';
-import '../../widget/home_widget/my_drawer.dart';
+import '../../../core/helper/app_strings.dart';
+import '../../../core/helper/images_assets.dart';
+import '../../internet_connection/internet_connection_cubit.dart';
+import 'widget/categories_and_items_bloc_builder.dart';
+import 'widget/custom_banner.dart';
+import 'widget/home_top_bar.dart';
+import 'widget/my_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

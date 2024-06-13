@@ -3,7 +3,7 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/theming/text_styel.dart';
-import '../../../data/model/home_model.dart';
+import '../../data/model/home_model.dart';
 
 class AkelniRecommendation extends StatelessWidget {
   final List<Items> foodItems;

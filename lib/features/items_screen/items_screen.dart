@@ -4,9 +4,9 @@ import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../core/helper/app_strings.dart';
-import '../../../data/model/home_model.dart';
-import '../../widget/items_widget/akelni_item.dart';
+import '../../core/helper/app_strings.dart';
+import '../home/data/model/home_model.dart';
+import 'widget/akelni_item.dart';
 
 class ItemsScreen extends StatefulWidget {
   final List<Items>? items;
