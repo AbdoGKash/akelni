@@ -74,4 +74,5 @@ class AppStrings {
   static const String enterAdressInformation =
       "Please enter adress information";
   static const String deliveryPrice = "10";
+  static const String findAItem = 'Find a item ...';
 }
