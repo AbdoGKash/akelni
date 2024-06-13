@@ -139,4 +139,10 @@ class _ItemsScreenState extends State<ItemsScreen> {
                   })),
     );
   }
+
+  @override
+  void dispose() {
+    _searchTextController.clear();
+    super.dispose();
+  }
 }
