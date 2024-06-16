@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/injection.dart';
-import 'package:flutter_application_1/features/favorite/favorite.dart';
+import 'package:flutter_application_1/features/favorite/view/favorite.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter_application_1/features/home/view/home_screen.dart';
@@ -11,8 +11,6 @@ import 'package:flutter_application_1/features/paypal/paypal_check_out.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:flutter_application_1/features/sign_up/view/sign_up_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-import '../../features/favorite/favorite_logic/favorite_cubit.dart';
 import '../../features/items_screen/items_screen.dart';
 import '../../features/internet_connection/internet_connection_cubit.dart';
 import '../../features/login/view/login_screen.dart';
@@ -58,12 +56,8 @@ class AppRouter {
       case RoutersName.itemsScreen:
         final items = settings.arguments as List<Items>;
         return MaterialPageRoute(
-          builder: (_) => BlocProvider(
-            create: (context) =>
-                FavoriteCubit(Hive.box<Items>('fav'))..loadFavorites(),
-            child: ItemsScreen(
-              items: items,
-            ),
+          builder: (_) => ItemsScreen(
+            items: items,
           ),
         );
       case RoutersName.itemsDetilsScreen:

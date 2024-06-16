@@ -29,10 +29,13 @@ Future<void> initGetIt() async {
       () => ApiServiceHome(createAndSetupDio()));
   getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
   getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
-  getIt.registerFactory<ChangeLanguageAndThemeCubit>(
+  getIt.registerLazySingleton<ChangeLanguageAndThemeCubit>(
       () => ChangeLanguageAndThemeCubit());
   getIt.registerFactory<InternetConnectionCubit>(
       () => InternetConnectionCubit());
+  // it should be here ==> await
+  // عشان البرنامج هيكون عايز يبقا ولو حطتها هيا هتخليه يستني
+  await Hive.openBox<ItemsFavorite>('favor');
 }
 
 Dio createAndSetupDio() {

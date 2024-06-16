@@ -7,7 +7,6 @@ import 'features/favorite/hive.dart';
 
 Future<void> main() async {
   await Hive.initFlutter();
-  await Hive.openBox<ItemsFavorite>('favor');
   Hive.registerAdapter(ItemsFavoriteAdapter());
   initGetIt();
   runApp(const AkelniApp());

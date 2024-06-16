@@ -82,4 +82,7 @@ class AppStrings {
   static const String offer = "50% OFF";
   static const String offerItems = "All Pizza and Pasta";
   static const String pleaseCheckInternet = "please check internet";
+  static const String removedFromFavorites = "Removed from Favorites";
+  static const String successfullyAddedToFavorites =
+      "Successfully added to favorites";
 }

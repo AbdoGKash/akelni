@@ -3,7 +3,6 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import '../../core/helper/app_strings.dart';
 import '../home/data/model/home_model.dart';
 import 'widget/akelni_item.dart';
@@ -21,7 +20,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
   late List<Items> searchedForItems;
   bool _isSearching = false;
 
-  final _searchTextController = TextEditingController(); // remove final
+  final _searchTextController = TextEditingController();
 
   Widget _buildSearchField() {
     return TextField(

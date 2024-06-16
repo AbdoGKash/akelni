@@ -19,7 +19,7 @@ class ItemsFavoriteAdapter extends TypeAdapter<ItemsFavorite> {
     return ItemsFavorite(
       id: fields[0] as String?,
       title: fields[1] as String?,
-      price: fields[2] as double?,
+      price: fields[2] as int?,
       image: fields[3] as String?,
     );
   }

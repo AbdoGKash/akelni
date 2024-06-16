@@ -6,6 +6,7 @@ import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../core/helper/app_strings.dart';
+import '../../../../core/routing/routers_name.dart';
 
 class HomeTopBar extends StatelessWidget {
   const HomeTopBar({super.key});
@@ -28,10 +29,18 @@ class HomeTopBar extends StatelessWidget {
           ],
         ),
         const Spacer(),
-        CircleAvatar(
-          backgroundColor: ColorsManager.ligtherGrey,
-          radius: 25,
-          child: SvgPicture.asset(ImagesAssets.notifications),
+        InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, RoutersName.favoriteScreen);
+          },
+          child: CircleAvatar(
+            backgroundColor: ColorsManager.ligtherGrey,
+            radius: 25,
+            child: Icon(
+              Icons.favorite_outline,
+              color: ColorsManager.primary,
+            ),
+          ),
         )
       ],
     );

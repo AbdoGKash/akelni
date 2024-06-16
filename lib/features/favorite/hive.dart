@@ -2,7 +2,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 part 'hive.g.dart';
 
-@HiveType(typeId: 0)
+@HiveType(typeId: 32)
 class ItemsFavorite extends HiveObject {
   @HiveField(0)
   String? id;
@@ -11,7 +11,7 @@ class ItemsFavorite extends HiveObject {
   String? title;
 
   @HiveField(2)
-  double? price;
+  int? price;
 
   @HiveField(3)
   String? image;

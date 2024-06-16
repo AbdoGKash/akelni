@@ -34,7 +34,7 @@ class MyDrawer extends StatelessWidget {
             leadingIcon: Icons.person,
             title: AppStrings.myProfile.tr(context),
             onTap: () {
-              Navigator.pushNamed(context, RoutersName.favoriteScreen);
+              // Navigator.pushNamed(context, RoutersName.favoriteScreen);
             },
           ),
           buildDrawerListItemsDivider(),

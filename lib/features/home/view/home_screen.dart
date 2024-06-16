@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
+import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,6 +18,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        forceMaterialTransparency: true,
+        backgroundColor: ColorsManager.primary,
+        title: Text(
+          "Home",
+          // style: TextStyles.font20WhiteBold,
+        ),
+      ),
       drawer: const MyDrawer(),
       body: SafeArea(
         child: Container(
