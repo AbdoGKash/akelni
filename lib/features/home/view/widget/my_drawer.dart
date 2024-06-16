@@ -2,10 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
-import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
-import 'package:flutter_application_1/fav_test.dart';
-
 import '../../../../../core/helper/app_strings.dart';
 import '../../../../../core/theming/colors.dart';
 import 'build_drawer_header.dart';
@@ -33,26 +30,26 @@ class MyDrawer extends StatelessWidget {
           BuildDrawerListItem(
             leadingIcon: Icons.person,
             title: AppStrings.myProfile.tr(context),
-            onTap: () {
-              // Navigator.pushNamed(context, RoutersName.favoriteScreen);
-            },
+            onTap: () {},
           ),
           buildDrawerListItemsDivider(),
           const ChangeLangBloc(),
+          buildDrawerListItemsDivider(),
+          buildDrawerListItemsDivider(),
+          const ChangeThemeBloc(),
           buildDrawerListItemsDivider(),
           BuildDrawerListItem(
             leadingIcon: Icons.help,
             title: AppStrings.help.tr(context),
           ),
           buildDrawerListItemsDivider(),
-          const ChangeThemeBloc(),
           BuildDrawerListItem(
             leadingIcon: Icons.logout,
             title: AppStrings.logout.tr(context),
             trailing: const SizedBox(),
           ),
           const SizedBox(
-            height: 90,
+            height: 50,
           ),
           ListTile(
             leading: Text(

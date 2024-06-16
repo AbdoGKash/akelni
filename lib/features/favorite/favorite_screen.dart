@@ -6,11 +6,11 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import '../../../core/helper/images_assets.dart';
-import '../../../core/theming/colors.dart';
-import '../../../core/theming/text_styel.dart';
-import '../hive.dart';
-import '../widget/custom_app_bar.dart';
+import '../../core/helper/images_assets.dart';
+import '../../core/theming/colors.dart';
+import '../../core/theming/text_styel.dart';
+import 'data/model/hive.dart';
+import 'widget/custom_app_bar.dart';
 
 class FavoritesScreen extends StatefulWidget {
   const FavoritesScreen({super.key});
@@ -37,7 +37,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     return Scaffold(
       appBar: const CustomAppBar(),
       body: ValueListenableBuilder(
-        valueListenable: Hive.box<ItemsFavorite>('favor').listenable(),
+        valueListenable: Hive.box<ItemsFavorite>(HiveDB.favorite).listenable(),
         builder: (context, box, child) {
           final keys = box.keys.toList();
           return GridView.builder(

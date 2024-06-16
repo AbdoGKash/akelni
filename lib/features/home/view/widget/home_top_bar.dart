@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/core/helper/images_assets.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../core/helper/app_strings.dart';
 import '../../../../core/routing/routers_name.dart';

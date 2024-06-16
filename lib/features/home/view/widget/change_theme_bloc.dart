@@ -13,7 +13,7 @@ class ChangeThemeBloc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BuildDrawerListItem(
-      leadingIcon: Icons.language,
+      leadingIcon: Icons.dark_mode,
       title: AppStrings.changeTheme.tr(context),
       onTap: () async {
         final selectedOption = await showMenu<String>(

@@ -86,3 +86,7 @@ class AppStrings {
   static const String successfullyAddedToFavorites =
       "Successfully added to favorites";
 }
+
+class HiveDB {
+  static const favorite = "Favorite";
+}

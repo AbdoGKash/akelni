@@ -10,7 +10,7 @@ import '../../../core/helper/app_strings.dart';
 import '../../../core/helper/images_assets.dart';
 import '../../../core/routing/routers_name.dart';
 import '../../../core/theming/text_styel.dart';
-import '../../favorite/hive.dart';
+import '../../favorite/data/model/hive.dart';
 
 class AkelniItems extends StatefulWidget {
   final List<Items>? items;
@@ -39,7 +39,7 @@ class _AkelniItemsState extends State<AkelniItems> {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
-      valueListenable: Hive.box<ItemsFavorite>('favor').listenable(),
+      valueListenable: Hive.box<ItemsFavorite>(HiveDB.favorite).listenable(),
       builder: (context, Box<ItemsFavorite> box, child) {
         return GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
