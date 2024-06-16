@@ -17,7 +17,7 @@ class ItemsScreen extends StatefulWidget {
 }
 
 class _ItemsScreenState extends State<ItemsScreen> {
-  late List<Items> searchedForItems;
+  late List<Items>? searchedForItems;
   bool _isSearching = false;
 
   final _searchTextController = TextEditingController();
@@ -116,7 +116,11 @@ class _ItemsScreenState extends State<ItemsScreen> {
                   AppStrings.notFound.tr(context),
                   style: TextStyles.font32primaryBold,
                 ))
-              : AkelniItems(items: widget.items)),
+              : AkelniItems(
+                  items: _searchTextController.text.isEmpty
+                      ? widget.items
+                      : searchedForItems,
+                )),
     );
   }
 

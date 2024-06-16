@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
+import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 
 import '../../../core/theming/text_styel.dart';
 

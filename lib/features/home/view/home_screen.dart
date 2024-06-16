@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: ColorsManager.primary,
         title: Text(
           "Home",
-          // style: TextStyles.font20WhiteBold,
+          style: TextStyles.font24BlackBold,
         ),
       ),
       drawer: const MyDrawer(),

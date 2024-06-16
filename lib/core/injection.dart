@@ -35,7 +35,7 @@ Future<void> initGetIt() async {
       () => InternetConnectionCubit());
   // it should be here ==> await
   // عشان البرنامج هيكون عايز يبقا ولو حطتها هيا هتخليه يستني
-  await Hive.openBox<ItemsFavorite>('favor');
+  // await Hive.openBox<ItemsFavorite>('favor');
 }
 
 Dio createAndSetupDio() {

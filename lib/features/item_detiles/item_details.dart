@@ -7,12 +7,17 @@ import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/widgets/app_text_button.dart';
-import 'widget/counter_item.dart';
 
-class ItemDetails extends StatelessWidget {
+class ItemDetails extends StatefulWidget {
   final Items item;
-  const ItemDetails({super.key, required this.item});
+  ItemDetails({super.key, required this.item});
 
+  @override
+  State<ItemDetails> createState() => _ItemDetailsState();
+}
+
+class _ItemDetailsState extends State<ItemDetails> {
+  int counter = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +26,7 @@ class ItemDetails extends StatelessWidget {
           children: [
             SizedBox(
               child: Image.network(
-                item.image!,
+                widget.item.image!,
                 fit: BoxFit.fill,
               ),
             ),
@@ -33,12 +38,12 @@ class ItemDetails extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "${item.title}".tr(context),
+                        "${widget.item.title}".tr(context),
                         style: TextStyles.font20BlackBold,
                       ),
                       Row(
                         children: [
-                          Text("${item.price}".tr(context),
+                          Text("${newPrice()}",
                               style: TextStyles.font16RedBold
                                   .copyWith(fontSize: 20)),
                           Text(" \$",
@@ -49,8 +54,39 @@ class ItemDetails extends StatelessWidget {
                     ],
                   ),
                   const Spacer(),
-                  const CounterItem(),
+                  Row(
+                    children: [
+                      IconButton(
+                          onPressed: () {
+                            setState(() {
+                              counter++;
+                            });
+                          },
+                          icon: const Icon(Icons.add)),
+                      Text(
+                        "$counter",
+                        style: TextStyles.font20BlackBold,
+                      ),
+                      IconButton(
+                          onPressed: () {
+                            if (counter > 1) {
+                              setState(() {
+                                counter--;
+                              });
+                            }
+                          },
+                          icon: const Icon(Icons.remove)),
+                    ],
+                  )
+                  // const CounterItem(),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+              child: Text(
+                widget.item.description.toString(),
+                style: TextStyles.font13BlackW300,
               ),
             ),
             SizedBox(
@@ -63,7 +99,7 @@ class ItemDetails extends StatelessWidget {
                 textStyle: TextStyles.font16WhiteSemiBold,
                 onPressed: () async {
                   Navigator.pushNamed(context, RoutersName.orderDetiles,
-                      arguments: item);
+                      arguments: widget.item);
                 },
               ),
             )
@@ -71,5 +107,9 @@ class ItemDetails extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  int newPrice() {
+    return widget.item.price! * counter;
   }
 }

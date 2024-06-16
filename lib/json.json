@@ -1,0 +1,145 @@
+{
+    "status": 0,
+    "message": "Success",
+    "categories" :[
+            {
+         "id" : "1",
+        "title":"Pizza",
+        "image" :"https://media.istockphoto.com/id/1351732902/photo/female-hands-of-a-pizza-baker-hold-a-freshly-baked-pizza-with-sausage-bacon-mushrooms.webp?b=1&s=170667a&w=0&k=20&c=myRnyHxwSrZHdbyaDMNVCOuouehNtrW7yXXTfe5wFaU=",
+         "items" : 
+             [
+                {
+                   "id" : "1",
+                   "title":"Margereta",
+                   "price": 65,
+                   "image" : "https://images.unsplash.com/photo-1589187151053-5ec8818e661b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZyZWUlMjBwaXp6YSUyMGltYWdlfGVufDB8fDB8fHww",
+                   "description": "A classic Italian pizza with a delicious blend of fresh tomatoes, mozzarella cheese, and basil leaves. The pizza dough is hand-tossed and baked to perfection, creating a thin and crispy crust. Perfectly seasoned with a touch of olive oil and a sprinkle of salt, this pizza is a timeless favorite that brings the authentic taste of Italy to your table."
+                    
+                },
+                     {
+                   "id" : "2",
+                   "title":"Chicken",
+                   "price": 100,
+                   "image" : "https://media.istockphoto.com/id/1146536864/photo/supreme-pizza.webp?b=1&s=170667a&w=0&k=20&c=yzKjkPKXNdsDCZTVGT2AXutf3BF8HAdXHpyZdYyvCkU=",
+                   "description": "A flavorful pizza topped with tender, juicy chicken pieces, mozzarella cheese, and a rich tomato sauce. Enhanced with a blend of aromatic herbs and spices, and finished with a drizzle of tangy barbecue sauce. The crust is baked to a golden brown, providing a crispy base for the delicious toppings. Perfect for chicken lovers looking for a delightful and satisfying meal."
+
+                },
+                     {
+                   "id" : "3",
+                   "title":"Pepperoni",
+                   "price": 125,
+                   "image" : "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMHBpenphJTIwaW1hZ2UlMjAoNTA4KjMzOSl8ZW58MHx8MHx8fDA%3D",
+                   "description": "A classic favorite, Pepperoni Pizza features a generous layer of spicy pepperoni slices, perfectly melted mozzarella cheese, and a rich tomato sauce. The pizza is baked to a golden brown with a crispy crust that adds the perfect crunch to each bite. This delicious combination of flavors and textures makes it a timeless choice for pizza lovers everywhere."
+
+                },
+                     {
+                   "id" : "4",
+                   "title":"Meat",
+                   "price": 150,
+                   "image" : "https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGZyZWUlMjBwaXp6YSUyMGltYWdlJTIwKDUwOCozMzkpfGVufDB8fDB8fHww",
+                   "description": "A classic favorite, Pepperoni Pizza features a generous layer of spicy pepperoni slices, perfectly melted mozzarella cheese, and a rich tomato sauce. The pizza is baked to a golden brown with a crispy crust that adds the perfect crunch to each bite. This delicious combination of flavors and textures makes it a timeless choice for pizza lovers everywhere."
+
+                },
+                     {
+                   "id" : "5",
+                   "title":"Garden",
+                   "price": 65,
+                   "image" : "https://plus.unsplash.com/premium_photo-1667682942148-a0c98d1d70db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZyZWUlMjBwaXp6YSUyMGltYWdlJTIwKDUwOCozMzkpfGVufDB8fDB8fHww",
+                   "description": "A classic favorite, Pepperoni Pizza features a generous layer of spicy pepperoni slices, perfectly melted mozzarella cheese, and a rich tomato sauce. The pizza is baked to a golden brown with a crispy crust that adds the perfect crunch to each bite. This delicious combination of flavors and textures makes it a timeless choice for pizza lovers everywhere."
+                } ,
+                {
+                    "id" : "6",
+                    "title":"Hawaiian",
+                    "price": 85,
+                    "image" : "https://img.freepik.com/free-photo/slice-crispy-pizza-with-meat-cheese_140725-6974.jpg?size=626&ext=jpg&ga=GA1.1.1209077135.1718565457&semt=ais_user",
+                    "description": "A tropical twist on the classic pizza, the Hawaiian pizza features juicy pineapple chunks and ham slices on a bed of melted mozzarella cheese and tomato sauce. Baked to perfection with a crispy crust, this pizza offers a unique combination of sweet and savory flavors."
+                },
+                {
+                    "id" : "7",
+                    "title":"BBQ Chicken",
+                    "price": 110,
+                    "image" : "https://img.freepik.com/free-photo/delicious-italian-food_1147-165.jpg?size=626&ext=jpg&ga=GA1.1.1209077135.1718565457&semt=ais_user",
+                    "description": "A tangy and flavorful pizza topped with grilled chicken pieces, red onions, and cilantro, all drizzled with barbecue sauce. Finished with mozzarella cheese and a crispy crust, this BBQ Chicken pizza is perfect for those who enjoy a sweet and smoky flavor profile."
+                },
+                {
+                    "id" : "8",
+                    "title":"Four Cheese",
+                    "price": 95,
+                    "image" : "https://img.freepik.com/free-photo/hawaiian-pizza_1203-2455.jpg?size=626&ext=jpg&ga=GA1.1.1209077135.1718565457&semt=ais_user",
+                    "description": "A cheese lover's dream, this pizza features a blend of four delicious cheeses: mozzarella, cheddar, parmesan, and gorgonzola. The rich and creamy cheese combination is layered on a crispy crust with a light tomato sauce, making it an indulgent and satisfying choice."
+                },
+                {
+                    "id" : "9",
+                    "title":"Spicy Veggie",
+                    "price": 75,
+                    "image" : "https://img.freepik.com/free-photo/delicious-italian-pizza-with-tomato-olives-pepperoni-mushrooms-top-view-isolated-white-background-still-life-copy-space_639032-291.jpg?size=626&ext=jpg&ga=GA1.1.1209077135.1718565457&semt=ais_user",
+                    "description": "A zesty and flavorful vegetarian pizza topped with a variety of spicy veggies including jalapeños, bell peppers, red onions, and tomatoes. With mozzarella cheese and a spicy tomato sauce, this pizza offers a kick of heat that’s perfect for those who enjoy bold flavors."
+                },
+                {
+                    "id" : "10",
+                    "title":"Mushroom",
+                    "price": 90,
+                    "image" : "https://img.freepik.com/free-photo/tasty-top-view-sliced-pizza-italian-traditional-round-pizza_90220-1357.jpg?size=626&ext=jpg&ga=GA1.1.1209077135.1718565457&semt=ais_user",
+                    "description": "A savory pizza topped with a variety of mushrooms including portobello, shiitake, and button mushrooms. Complemented by mozzarella cheese and a garlic herb sauce, the crispy crust enhances the rich and earthy flavors of the mushrooms, making it a favorite for mushroom enthusiasts."
+                }
+             ]
+                
+            },
+            {
+               "id" : "2", 
+               "title":"Burger",
+               "image" : "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZyZWUlMjBidXJnZXIlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+            
+                "items" : [
+                    {
+                        "id" : "1",
+                        "title":"Kebab",
+                        "price": 90,
+                        "image" : "https://w7.pngwing.com/pngs/830/422/png-transparent-three-patty-burger-hamburger-veggie-burger-fatburger-restaurant-cheese-burger-king-food-beef-recipe-thumbnail.png",
+                        "description": "A juicy grilled beef patty topped with melted cheddar cheese, fresh lettuce, ripe tomatoes, crisp pickles, and sliced onions, served in a toasted sesame seed bun."
+                    },
+                    {
+                        "id" : "2",
+                        "title":"Veggie",
+                        "price": 75,
+                        "image" : "https://w7.pngwing.com/pngs/739/553/png-transparent-hamburger-veggie-burger-chicken-sandwich-fast-food-hamburger-burger-burger-sandwich-food-recipe-cheeseburger-thumbnail.png",
+                        "description": "A juicy grilled beef patty topped with melted cheddar cheese, fresh lettuce, ripe tomatoes, crisp pickles, and sliced onions, served in a toasted sesame seed bun."
+                    },
+                    {
+                        "id" : "3",
+                        "title":"Cheeseburger",
+                        "price": 80,
+                        "image" : "https://w7.pngwing.com/pngs/201/77/png-transparent-hamburger-veggie-burger-take-out-fast-food-kebab-delicious-beef-burger-burger-with-lettuce-tomato-and-cheese-food-beef-recipe-thumbnail.png",
+                        "description": "A juicy grilled beef patty topped with melted cheddar cheese, fresh lettuce, ripe tomatoes, crisp pickles, and sliced onions, served in a toasted sesame seed bun."
+                    },
+                    {
+                        "id" : "4",
+                        "title":"Burger king",
+                        "price": 110,
+                        "image" : "https://w7.pngwing.com/pngs/200/652/png-transparent-whopper-hamburger-cheeseburger-burger-king-premium-burgers-fast-food-fast-food-burger-burger-dish-food-recipe-fast-food-restaurant-thumbnail.png",
+                        "description": "A juicy grilled beef patty topped with melted cheddar cheese, fresh lettuce, ripe tomatoes, crisp pickles, and sliced onions, served in a toasted sesame seed bun."
+                    },
+                    {
+                        "id" : "5",
+                        "title":"Premium",
+                        "price": 130,
+                        "image" : "https://w7.pngwing.com/pngs/411/942/png-transparent-hamburger-cheeseburger-wendy-s-burger-king-food-burger-top-thumbnail.png",
+                        "description": "A juicy grilled beef patty topped with melted cheddar cheese, fresh lettuce, ripe tomatoes, crisp pickles, and sliced onions, served in a toasted sesame seed bun."
+                    }
+
+                ]
+            },
+            {
+                "id" : "3",
+                 "title":"Pasta",
+                 "image" : "https://media.istockphoto.com/id/155433174/photo/bolognese-pens.jpg?s=612x612&w=0&k=20&c=A_TBqOAzcOkKbeVv8qSDs0bukfAedhkA458JEFolo_M=",
+                 "items" : []
+            },
+                       {
+                "id" : "4", 
+               "title":"Drinkies",
+               "image" : "https://plus.unsplash.com/premium_photo-1684952849219-5a0d76012ed2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZyZWUlMjBEcmlua2llcyUyMGltYWdlfGVufDB8fDB8fHww",
+           "items" : []
+            }
+        ]
+ }

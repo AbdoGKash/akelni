@@ -5,7 +5,6 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../../../core/helper/app_strings.dart';
 import '../../../core/helper/images_assets.dart';
@@ -15,7 +14,11 @@ import '../../favorite/hive.dart';
 
 class AkelniItems extends StatefulWidget {
   final List<Items>? items;
-  const AkelniItems({super.key, this.items});
+
+  AkelniItems({
+    super.key,
+    this.items,
+  });
 
   @override
   State<AkelniItems> createState() => _AkelniItemsState();

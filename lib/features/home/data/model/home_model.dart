@@ -34,6 +34,7 @@ class Items {
   String? title;
   int? price;
   String? image;
+  String? description;
 
   Items({this.id, this.title, this.price, this.image});
   factory Items.fromJson(Map<String, dynamic> json) => _$ItemsFromJson(json);
