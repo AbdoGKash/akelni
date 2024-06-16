@@ -7,8 +7,10 @@ import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dar
 import 'package:flutter_application_1/features/sign_up/data/repo/sign_up_repo.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:get_it/get_it.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 import '../features/chang_language_and_theme/chang_lang_cubit.dart';
+import '../features/favorite/hive.dart';
 import '../features/internet_connection/internet_connection_cubit.dart';
 import '../features/login/data/repo/login_repo.dart';
 

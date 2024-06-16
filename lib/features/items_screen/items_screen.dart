@@ -3,7 +3,7 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:hive_flutter/hive_flutter.dart';
 import '../../core/helper/app_strings.dart';
 import '../home/data/model/home_model.dart';
 import 'widget/akelni_item.dart';
@@ -19,7 +19,6 @@ class ItemsScreen extends StatefulWidget {
 
 class _ItemsScreenState extends State<ItemsScreen> {
   late List<Items> searchedForItems;
-
   bool _isSearching = false;
 
   final _searchTextController = TextEditingController(); // remove final
@@ -68,7 +67,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
           icon: Icon(
             Icons.search,
             color: ColorsManager.white,
-            size: 40,
+            size: 30,
           ),
         ),
       ];
@@ -118,25 +117,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
                   AppStrings.notFound.tr(context),
                   style: TextStyles.font32primaryBold,
                 ))
-              : GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 2 / 3,
-                    crossAxisSpacing: 1,
-                    mainAxisSpacing: 1,
-                  ),
-                  shrinkWrap: true,
-                  physics: const ClampingScrollPhysics(),
-                  itemCount: _searchTextController.text.isEmpty
-                      ? widget.items!.length
-                      : searchedForItems.length,
-                  itemBuilder: (context, index) {
-                    return AkelniItem(
-                      item: _searchTextController.text.isEmpty
-                          ? widget.items![index]
-                          : searchedForItems[index],
-                    );
-                  })),
+              : AkelniItems(items: widget.items)),
     );
   }
 
@@ -146,3 +127,75 @@ class _ItemsScreenState extends State<ItemsScreen> {
     super.dispose();
   }
 }
+
+
+
+//  GridView.builder(
+//                       gridDelegate:
+//                           const SliverGridDelegateWithFixedCrossAxisCount(
+//                         crossAxisCount: 2,
+//                         childAspectRatio: 2 / 3,
+//                         crossAxisSpacing: 1,
+//                         mainAxisSpacing: 1,
+//                       ),
+//                       shrinkWrap: true,
+//                       physics: const ClampingScrollPhysics(),
+//                       itemCount: _searchTextController.text.isEmpty
+//                           ? widget.items!.length
+//                           : searchedForItems.length,
+//                       itemBuilder: (context, index) {
+//                         final isFavorite = box.get(index) != null;
+//                         return AkelniItem(
+//                           item: _searchTextController.text.isEmpty
+//                               ? widget.items![index]
+//                               : searchedForItems[index],
+//                           isFavorite: isFavorite,
+//                         );
+//                       });
+
+
+
+//   favorite learn 
+// ValueListenableBuilder(
+//                   valueListenable: Hive.box('fav').listenable(),
+
+//                   /// Hive
+//                   builder: (context, box, child) {
+                    // return ListView.builder(
+                    //     itemCount: 5,
+                    //     itemBuilder: (context, index) {
+                    //       final _isFavorite = box.get(index) != null;
+                    //       return ListTile(
+                    //         title: Text(widget.items![index].title.toString()),
+                    //         trailing: IconButton(
+                    //           onPressed: () async {
+                    //             ScaffoldMessenger.of(context).clearSnackBars();
+                    //             if (_isFavorite) {
+                    //               await box.delete(index);
+                    //               const snackBar = SnackBar(
+                    //                 content: Text("removed"),
+                    //                 backgroundColor: Colors.red,
+                    //               );
+                    //               ScaffoldMessenger.of(context)
+                    //                   .showSnackBar(snackBar);
+                    //             } else {
+                    //               await box.put(widget.items![index].id,
+                    //                   widget.items![index].title);
+                    //               const snackBar = SnackBar(
+                    //                 content: Text("sucess"),
+                    //                 backgroundColor: Colors.blue,
+                    //               );
+                    //               ScaffoldMessenger.of(context)
+                    //                   .showSnackBar(snackBar);
+                    //             }
+                    //           },
+                    //           icon: Icon(
+                    //               _isFavorite
+                    //                   ? Icons.favorite
+                    //                   : Icons.favorite_outline,
+                    //               color: ColorsManager.red),
+                    //         ),
+                    //       );
+                //         });
+                //   },
+                // )

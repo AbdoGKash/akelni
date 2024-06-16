@@ -78,7 +78,7 @@ class AppStrings {
   static const String enterAdressInformation = "Please enter your address";
   static const String paymentUsingPayPal = "Payment using payPal";
   static const String deliveryPrice = "10";
-  static const String findAItem = 'Find a item ...';
+  static const String findAItem = 'Find a food ...';
   static const String offer = "50% OFF";
   static const String offerItems = "All Pizza and Pasta";
   static const String pleaseCheckInternet = "please check internet";

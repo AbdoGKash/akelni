@@ -7,4 +7,5 @@ class RoutersName {
   static const String itemsDetilsScreen = "/itemsDetilsScreen";
   static const String orderDetiles = "/orderDetiles";
   static const String checkout = "/checkout";
+  static const String favoriteScreen = "/favoriteScreen";
 }

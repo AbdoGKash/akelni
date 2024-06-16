@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
+import 'package:flutter_application_1/core/routing/routers_name.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
+import 'package:flutter_application_1/fav_test.dart';
 
 import '../../../../../core/helper/app_strings.dart';
 import '../../../../../core/theming/colors.dart';
@@ -31,7 +33,9 @@ class MyDrawer extends StatelessWidget {
           BuildDrawerListItem(
             leadingIcon: Icons.person,
             title: AppStrings.myProfile.tr(context),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, RoutersName.favoriteScreen);
+            },
           ),
           buildDrawerListItemsDivider(),
           const ChangeLangBloc(),
