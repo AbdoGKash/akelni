@@ -6,6 +6,7 @@
        "Sign Up" : "Sign Up",
        "Email" : "Email",
        "password" : "password",
+
        "please enter a vaild email" : "please enter a vaild email",
        "please enter a vaild password" : "please enter a vaild password",
        "Pizza" : "Pizza",
@@ -75,7 +76,9 @@
       "Order Detiles" : "Order Detiles",
       "Please enter your address" : "Please enter your address",
       "Payment using payPal" : "Payment using payPal",
-      "Find a food ..." : "Find a food ..."
+      "Find a food ..." : "Find a food ...",
+      "Get Started" : "Get Started",
+      "Password" : "Password"
         
 }
 

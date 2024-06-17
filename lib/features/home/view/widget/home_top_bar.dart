@@ -27,7 +27,7 @@ class HomeTopBar extends StatelessWidget {
           ],
         ),
         const Spacer(),
-        InkWell(
+        GestureDetector(
           onTap: () {
             Navigator.pushNamed(context, RoutersName.favoriteScreen);
           },

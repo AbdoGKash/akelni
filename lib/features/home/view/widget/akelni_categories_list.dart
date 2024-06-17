@@ -21,7 +21,7 @@ class AkelniCategoriesList extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20),
               child: Column(
                 children: [
-                  InkWell(
+                  GestureDetector(
                     onTap: () {
                       Navigator.pushNamed(context, RoutersName.itemsScreen,
                           arguments: categories[index]!.items);

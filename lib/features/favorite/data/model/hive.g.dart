@@ -17,7 +17,7 @@ class ItemsFavoriteAdapter extends TypeAdapter<ItemsFavorite> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return ItemsFavorite(
-      id: fields[0] as String?,
+      id: fields[0] as int?,
       title: fields[1] as String?,
       price: fields[2] as int?,
       image: fields[3] as String?,

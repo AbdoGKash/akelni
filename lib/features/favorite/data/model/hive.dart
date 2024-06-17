@@ -5,7 +5,7 @@ part 'hive.g.dart';
 @HiveType(typeId: 32)
 class ItemsFavorite extends HiveObject {
   @HiveField(0)
-  String? id;
+  int? id;
 
   @HiveField(1)
   String? title;

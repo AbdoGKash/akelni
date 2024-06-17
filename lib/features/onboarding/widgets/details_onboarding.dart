@@ -5,9 +5,10 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../core/routing/routers_name.dart';
 import '../../../core/theming/colors.dart';
 import '../../../core/theming/text_styel.dart';
-import 'custom_button_onbording.dart';
+import '../../../core/widgets/app_text_button.dart';
 
 class DetailsOnBoarding extends StatelessWidget {
   const DetailsOnBoarding({super.key});
@@ -33,7 +34,7 @@ class DetailsOnBoarding extends StatelessWidget {
               height: 10.h,
             ),
             Text(
-              AppStrings.orderForFood.tr(context),
+              AppStrings.orderForFood,
               style: TextStyles.font32primaryBold,
             ),
             SizedBox(
@@ -43,7 +44,16 @@ class DetailsOnBoarding extends StatelessWidget {
               AppStrings.onboardingDescription.tr(context),
               textAlign: TextAlign.center,
             ),
-            const CustomButtonOnBording()
+            SizedBox(
+              height: 40.h,
+            ),
+            AppTextButton(
+              buttonText: AppStrings.getStarted.tr(context),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, RoutersName.login);
+              },
+              textStyle: TextStyles.font16WhiteSemiBold,
+            )
           ],
         ),
       ),

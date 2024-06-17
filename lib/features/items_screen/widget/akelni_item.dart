@@ -72,14 +72,17 @@ class _AkelniItemsState extends State<AkelniItems> {
                           fit: BoxFit.cover,
                         )
                       : GridTile(
-                          child: Container(
-                            color: ColorsManager.grey,
-                            child: FadeInImage.assetNetwork(
-                              width: double.infinity,
-                              height: double.infinity,
-                              placeholder: ImagesAssets.loading,
-                              image: item.image.toString(),
-                              fit: BoxFit.cover,
+                          child: Hero(
+                            tag: item as Object,
+                            child: Container(
+                              color: ColorsManager.grey,
+                              child: FadeInImage.assetNetwork(
+                                width: double.infinity,
+                                height: double.infinity,
+                                placeholder: ImagesAssets.loading,
+                                image: item.image.toString(),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           footer: Container(

@@ -26,7 +26,7 @@ class SignUpScreen extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(
-              AppStrings.createAccount.tr(context),
+              AppStrings.createAccount,
               style: TextStyles.font32primaryBold,
             ),
             SizedBox(
@@ -44,7 +44,7 @@ class SignUpScreen extends StatelessWidget {
               height: 50,
             ),
             AppTextButton(
-              buttonText: AppStrings.createAccount.tr(context),
+              buttonText: AppStrings.createAccount,
               textStyle: TextStyles.font16WhiteSemiBold,
               onPressed: () {
                 context.read<SignUpCubit>().validateThenDoSignUp();

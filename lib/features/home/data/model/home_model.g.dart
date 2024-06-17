@@ -21,7 +21,7 @@ Map<String, dynamic> _$HomeToJson(Home instance) => <String, dynamic>{
     };
 
 Categories _$CategoriesFromJson(Map<String, dynamic> json) => Categories(
-      id: json['id'] as String?,
+      id: (json['id'] as num?)?.toInt(),
       title: json['title'] as String?,
       image: json['image'] as String?,
       items: (json['items'] as List<dynamic>?)
@@ -38,7 +38,7 @@ Map<String, dynamic> _$CategoriesToJson(Categories instance) =>
     };
 
 Items _$ItemsFromJson(Map<String, dynamic> json) => Items(
-      id: json['id'] as String?,
+      id: (json['id'] as num?)?.toInt(),
       title: json['title'] as String?,
       price: (json['price'] as num?)?.toInt(),
       image: json['image'] as String?,

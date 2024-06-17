@@ -26,6 +26,7 @@ class AppStrings {
   static const String enterEmailVaild = "please enter a vaild email";
   static const String enterPasswordVaild = 'please enter a vaild password';
   static const String help = 'Help';
+  static const String home = 'Home';
   static const String ordered = "Ordered";
   static const String myProfile = "My Profile";
   static const String logout = "Logout";
@@ -42,7 +43,7 @@ class AppStrings {
   static const String howAreYou = "How are you Today ?";
   static const String categories = "Categories";
   static const String akelniRecommendation = "Akelni Recommendation";
-  static const String orderForFood = "Order for Food";
+  static const String orderForFood = "Order For Food";
   static const String getStarted = "Get Started";
   static const String doNotHaveAccount = "Dont have account ? ";
   static const String createAccount = "Create Account";
@@ -85,6 +86,10 @@ class AppStrings {
   static const String removedFromFavorites = "Removed from Favorites";
   static const String successfullyAddedToFavorites =
       "Successfully added to favorites";
+  static const String warning = "Warning";
+  static const String doYouWantToLogout = "Do you want to logout ?";
+  static const String no = "No";
+  static const String yes = "Yes";
 }
 
 class HiveDB {

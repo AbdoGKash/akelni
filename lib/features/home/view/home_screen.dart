@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         forceMaterialTransparency: true,
         backgroundColor: ColorsManager.primary,
         title: Text(
-          "Home",
+          AppStrings.home,
           style: TextStyles.font24BlackBold,
         ),
       ),

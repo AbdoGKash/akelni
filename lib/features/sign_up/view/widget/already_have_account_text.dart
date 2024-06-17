@@ -18,7 +18,7 @@ class AlreadyHaveAccountText extends StatelessWidget {
           textAlign: TextAlign.center,
           text: TextSpan(children: [
             TextSpan(
-                text: AppStrings.alreadyHaveAccount.tr(context),
+                text: AppStrings.alreadyHaveAccount,
                 style: TextStyles.font13BlackW300),
             TextSpan(
                 text: AppStrings.login.tr(context),

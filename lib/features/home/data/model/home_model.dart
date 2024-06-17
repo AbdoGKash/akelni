@@ -15,7 +15,7 @@ class Home {
 
 @JsonSerializable()
 class Categories {
-  String? id;
+  int? id;
   String? title;
   String? image;
   List<Items>? items;
@@ -30,7 +30,7 @@ class Categories {
 
 @JsonSerializable()
 class Items {
-  String? id;
+  int? id;
   String? title;
   int? price;
   String? image;

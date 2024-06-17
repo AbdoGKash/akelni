@@ -35,7 +35,7 @@ class OrderDetiles extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CoustomCard(
-                    name: item.title.toString(),
+                    name: item.title.toString().tr(context),
                     count: item.id.toString(),
                     image: item.image.toString()),
                 SizedBox(
@@ -104,11 +104,11 @@ class OrderDetiles extends StatelessWidget {
                 SizedBox(
                   height: 50.h,
                 ),
-                Cart(
+                PriceDetils(
                   items: item,
                 ),
                 SizedBox(
-                  height: 10.h,
+                  height: 40.h,
                 ),
                 AppTextButton(
                   buttonText: AppStrings.completeOrder.tr(context),

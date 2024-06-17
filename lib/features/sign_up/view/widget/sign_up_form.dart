@@ -24,10 +24,10 @@ class _SignUpFormState extends State<SignUpForm> {
         children: [
           AppTextFormField(
             controller: context.read<SignUpCubit>().nameController,
-            hintText: AppStrings.name.tr(context),
+            hintText: AppStrings.name,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildName.tr(context);
+                return AppStrings.pleaseEnterVaildName;
               }
               return null;
             },
@@ -37,10 +37,10 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           AppTextFormField(
             controller: context.read<SignUpCubit>().phoneNumberController,
-            hintText: AppStrings.phoneNumber.tr(context),
+            hintText: AppStrings.phoneNumber,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildPhone.tr(context);
+                return AppStrings.pleaseEnterVaildPhone;
               }
               return null;
             },
@@ -53,7 +53,7 @@ class _SignUpFormState extends State<SignUpForm> {
             hintText: AppStrings.email.tr(context),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildEmail.tr(context);
+                return AppStrings.pleaseEnterVaildEmail;
               }
               return null;
             },
@@ -73,10 +73,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     ? Icons.visibility_off
                     : Icons.visibility)),
             controller: context.read<SignUpCubit>().passwordController,
-            hintText: AppStrings.password.tr(context),
+            hintText: AppStrings.password,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildPassword.tr(context);
+                return AppStrings.pleaseEnterVaildPassword;
               }
               return null;
             },
@@ -98,10 +98,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     : Icons.visibility)),
             controller:
                 context.read<SignUpCubit>().passwordConfirmationController,
-            hintText: AppStrings.passwordConfirmation.tr(context),
+            hintText: AppStrings.passwordConfirmation,
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return AppStrings.pleaseEnterVaildPassword.tr(context);
+                return AppStrings.pleaseEnterVaildPassword;
               }
               return null;
             },

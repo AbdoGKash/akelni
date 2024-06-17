@@ -29,9 +29,12 @@ class _ItemDetailsState extends State<ItemDetails> {
             SizedBox(
               height: MediaQuery.sizeOf(context).height / 2,
               width: MediaQuery.sizeOf(context).width,
-              child: Image.network(
-                widget.item.image!,
-                fit: BoxFit.fill,
+              child: Hero(
+                tag: widget.item.id as Object,
+                child: Image.network(
+                  widget.item.image!,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
             Padding(

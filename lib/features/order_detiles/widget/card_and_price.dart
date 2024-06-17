@@ -8,9 +8,9 @@ import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 
 import '../../../core/helper/app_strings.dart';
 
-class Cart extends StatelessWidget {
+class PriceDetils extends StatelessWidget {
   final Items items;
-  const Cart({super.key, required this.items});
+  const PriceDetils({super.key, required this.items});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +19,7 @@ class Cart extends StatelessWidget {
       children: [
         Price(
             label: AppStrings.price.tr(context), price: items.price.toString()),
-        Price(
-            label: AppStrings.delivery.tr(context),
-            price: AppStrings.deliveryPrice.tr(context)),
+        Price(label: AppStrings.delivery.tr(context), price: 10.toString()),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 18),
           child: Divider(color: ColorsManager.primary),
