@@ -6,7 +6,6 @@ import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:lottie/lottie.dart';
 import '../../../core/helper/app_strings.dart';
 import '../../../core/helper/images_assets.dart';
 import '../../../core/routing/routers_name.dart';
@@ -27,6 +26,7 @@ class AkelniItems extends StatefulWidget {
 }
 
 class _AkelniItemsState extends State<AkelniItems> {
+  // Delay time to watch the download only
   bool _isLoading = true;
   @override
   void initState() {
@@ -103,15 +103,15 @@ class _AkelniItemsState extends State<AkelniItems> {
                                       TextSpan(
                                           text: "${item.title} \n".tr(context),
                                           style:
-                                              TextStyles.font16WhiteSemiBold),
+                                              TextStyles.font14WhiteSemiBold),
                                       TextSpan(
                                           text: '${item.price}'.tr(context),
                                           style:
-                                              TextStyles.font16WhiteSemiBold),
+                                              TextStyles.font14WhiteSemiBold),
                                       TextSpan(
                                           text: " \$",
                                           style:
-                                              TextStyles.font16WhiteSemiBold),
+                                              TextStyles.font14WhiteSemiBold),
                                     ],
                                   ),
                                 ),

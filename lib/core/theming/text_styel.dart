@@ -51,11 +51,17 @@ class TextStyles {
     fontWeight: FontWeight.w200,
     color: ColorsManager.grey,
   );
+  static TextStyle font14WhiteSemiBold = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w800,
+    color: ColorsManager.white,
+  );
   static TextStyle font16WhiteSemiBold = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w800,
     color: ColorsManager.white,
   );
+
   static TextStyle font20WhiteBold = TextStyle(
     fontSize: 20.sp,
     fontWeight: FontWeight.bold,

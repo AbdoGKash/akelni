@@ -22,7 +22,6 @@ class FavoritesScreen extends StatefulWidget {
 
 class _FavoritesScreenState extends State<FavoritesScreen> {
   bool _isLoading = true;
-
   @override
   void initState() {
     super.initState();
@@ -96,15 +95,15 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                               "${favoriteItem.title.toString()} \n"
                                                   .tr(context),
                                           style:
-                                              TextStyles.font16WhiteSemiBold),
+                                              TextStyles.font14WhiteSemiBold),
                                       TextSpan(
                                           text: favoriteItem.price.toString(),
                                           style:
-                                              TextStyles.font16WhiteSemiBold),
+                                              TextStyles.font14WhiteSemiBold),
                                       TextSpan(
                                           text: " \$",
                                           style:
-                                              TextStyles.font16WhiteSemiBold),
+                                              TextStyles.font14WhiteSemiBold),
                                     ],
                                   ),
                                 ),
