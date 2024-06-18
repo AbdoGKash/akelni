@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../core/helper/images_assets.dart';
+import '../../core/snakbar.dart';
 import '../../core/theming/colors.dart';
 import '../../core/theming/text_styel.dart';
 import 'data/model/hive.dart';
@@ -110,13 +111,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                 IconButton(
                                   onPressed: () async {
                                     await box.delete(key);
-                                    const snackBar = SnackBar(
-                                      content:
-                                          Text(AppStrings.removedFromFavorites),
-                                      backgroundColor: Colors.red,
-                                    );
-                                    ScaffoldMessenger.of(context)
-                                        .showSnackBar(snackBar);
+                                    snakBar(context, ImagesAssets.deleteLottie,
+                                        AppStrings.removedFromFavorites);
                                   },
                                   icon: const Icon(
                                     Icons.delete,

@@ -9,6 +9,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../core/helper/app_strings.dart';
+import '../../core/helper/images_assets.dart';
+import '../../core/snakbar.dart';
 import '../../core/widgets/app_text_button.dart';
 import '../favorite/data/model/hive.dart';
 import 'widget/item_size.dart';
@@ -126,24 +128,8 @@ class _ItemDetailsState extends State<ItemDetails> {
                                           price: newPrice(),
                                           image: item.image));
 
-                                  const snackBar = SnackBar(
-                                    content: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceAround,
-                                      children: [
-                                        Text(
-                                            AppStrings.addedToCartSuccessfully),
-                                        Icon(
-                                          Icons.done_outline_sharp,
-                                          color: Colors.white,
-                                        )
-                                      ],
-                                    ),
-                                    backgroundColor:
-                                        Color.fromARGB(255, 226, 78, 41),
-                                  );
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(snackBar);
+                                  snakBar(context, ImagesAssets.doneLottie,
+                                      AppStrings.addedToCartSuccessfully);
                                 },
                                 icon: Icon(
                                   FontAwesomeIcons.cartShopping,

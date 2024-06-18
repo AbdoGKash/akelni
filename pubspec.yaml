@@ -58,8 +58,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   pretty_dio_logger: ^1.3.1
-  #freezed: ^2.5.2
- # freezed_annotation: ^2.4.1
   dartz: ^0.10.1
   freezed: ^2.5.2
   freezed_annotation: ^2.4.1
@@ -69,6 +67,7 @@ dependencies:
   connectivity_plus: ^6.0.3
   hive_flutter: ^1.1.0
   hive_generator: ^2.0.1
+  lottie: ^2.7.0
 
 dev_dependencies:
   flutter_test:
@@ -108,6 +107,9 @@ flutter:
     # Lang
     - assets/lang/ar.json
     - assets/lang/en.json
+     #lottie
+    - assets/lottie/delete.json
+    - assets/lottie/done.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

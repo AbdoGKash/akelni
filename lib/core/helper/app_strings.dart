@@ -93,6 +93,7 @@ class AppStrings {
   static const String favorite = "Favorite";
   static const String cart = "Cart";
   static const String addedToCartSuccessfully = "Added to cart successfully";
+  static const String deletedFromCart = "Removed from cart";
 }
 
 class HiveDB {

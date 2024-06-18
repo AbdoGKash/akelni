@@ -6,9 +6,11 @@ import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:lottie/lottie.dart';
 import '../../../core/helper/app_strings.dart';
 import '../../../core/helper/images_assets.dart';
 import '../../../core/routing/routers_name.dart';
+import '../../../core/snakbar.dart';
 import '../../../core/theming/text_styel.dart';
 import '../../favorite/data/model/hive.dart';
 
@@ -120,23 +122,10 @@ class _AkelniItemsState extends State<AkelniItems> {
                                     if (isFavorite) {
                                       await box.delete(index);
 
-                                      const snackBar = SnackBar(
-                                        content: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          children: [
-                                            Text(AppStrings
-                                                .removedFromFavorites),
-                                            Icon(
-                                              Icons.delete,
-                                              color: Colors.white,
-                                            )
-                                          ],
-                                        ),
-                                        backgroundColor: Colors.redAccent,
-                                      );
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(snackBar);
+                                      snakBar(
+                                          context,
+                                          ImagesAssets.deleteLottie,
+                                          AppStrings.removedFromFavorites);
                                     } else {
                                       await box.put(
                                           index,
@@ -145,40 +134,11 @@ class _AkelniItemsState extends State<AkelniItems> {
                                               title: item.title,
                                               price: item.price,
                                               image: item.image));
-
-                                      // const snackBar = SnackBar(
-                                      //   content: Row(
-                                      //     mainAxisAlignment:
-                                      //         MainAxisAlignment.spaceAround,
-                                      //     children: [
-                                      //       Text(AppStrings
-                                      //           .successfullyAddedToFavorites),
-                                      //       Icon(
-                                      //         Icons.done_outline_sharp,
-                                      //         color: Colors.white,
-                                      //       )
-                                      //     ],
-                                      //   ),
-                                      //   backgroundColor:
-                                      //       Color.fromARGB(255, 226, 78, 41),
-                                      // );
-                                      ////// anmeted icon
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(SnackBar(
-                                        content: const Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          children: [
-                                            Text(AppStrings
-                                                .successfullyAddedToFavorites),
-                                            Icon(
-                                              Icons.done_outline_sharp,
-                                              color: Colors.white,
-                                            )
-                                          ],
-                                        ),
-                                        backgroundColor: ColorsManager.grey,
-                                      ));
+                                      snakBar(
+                                          context,
+                                          ImagesAssets.doneLottie,
+                                          AppStrings
+                                              .successfullyAddedToFavorites);
                                     }
                                   },
                                   icon: Icon(

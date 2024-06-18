@@ -3,7 +3,9 @@ import 'package:flutter_application_1/core/helper/language/app_localizations.dar
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
 import '../../core/helper/app_strings.dart';
+import '../../core/helper/images_assets.dart';
 import '../home/data/model/home_model.dart';
 import 'widget/akelni_item.dart';
 
@@ -109,18 +111,19 @@ class _ItemsScreenState extends State<ItemsScreen> {
         actions: _buildAppBarActions(),
       ),
       body: Padding(
-          padding: const EdgeInsets.fromLTRB(10, 10, 10, 20).w,
-          child: widget.items!.isEmpty
-              ? Center(
-                  child: Text(
-                  AppStrings.notFound.tr(context),
-                  style: TextStyles.font32primaryBold,
-                ))
-              : AkelniItems(
-                  items: _searchTextController.text.isEmpty
-                      ? widget.items
-                      : searchedForItems,
-                )),
+        padding: const EdgeInsets.fromLTRB(10, 10, 10, 20).w,
+        child: widget.items!.isEmpty
+            ? Center(
+                child: Text(
+                AppStrings.notFound.tr(context),
+                style: TextStyles.font32primaryBold,
+              ))
+            : AkelniItems(
+                items: _searchTextController.text.isEmpty
+                    ? widget.items
+                    : searchedForItems,
+              ),
+      ),
     );
   }
 

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/helper/images_assets.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../../core/helper/app_strings.dart';
+import '../../core/snakbar.dart';
 import '../../core/theming/colors.dart';
 import '../../core/theming/text_styel.dart';
 import '../../core/widgets/app_text_button.dart';
@@ -64,13 +66,10 @@ class CartScreen extends StatelessWidget {
                                   trailing: IconButton(
                                       onPressed: () async {
                                         await box.delete(key);
-                                        const snackBar = SnackBar(
-                                          content: Text(
-                                              AppStrings.removedFromFavorites),
-                                          backgroundColor: Colors.red,
-                                        );
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(snackBar);
+                                        snakBar(
+                                            context,
+                                            ImagesAssets.deleteLottie,
+                                            AppStrings.deletedFromCart);
                                       },
                                       icon: Icon(
                                         Icons.delete,
