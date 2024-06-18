@@ -17,7 +17,7 @@ class ChangeLangBloc extends StatelessWidget {
       onTap: () async {
         final selectedOption = await showMenu<String>(
           context: context,
-          position: const RelativeRect.fromLTRB(50, 390, 200, 100),
+          position: const RelativeRect.fromLTRB(50, 335, 200, 100),
           items: [
             PopupMenuItem<String>(
               value: 'ar',

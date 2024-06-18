@@ -10,4 +10,5 @@ class ImagesAssets {
   static const String loading = "$assetsBase/loading.gif";
   static const String noInternet = "$assetsBase/noNet.png";
   static const String pizzaBanner = "$assetsBase/pizza.png";
+  static const String me = "$assetsBase/me2.PNG";
 }

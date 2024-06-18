@@ -8,4 +8,5 @@ class RoutersName {
   static const String orderDetiles = "/orderDetiles";
   static const String checkout = "/checkout";
   static const String favoriteScreen = "/favoriteScreen";
+  static const String cartScreen = "/cartScreen";
 }

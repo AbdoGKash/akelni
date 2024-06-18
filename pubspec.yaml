@@ -104,6 +104,7 @@ flutter:
     - assets/images/loading.gif
     - assets/images/noNet.png
     - assets/images/pizza.png
+    - assets/images/me2.PNG
     # Lang
     - assets/lang/ar.json
     - assets/lang/en.json

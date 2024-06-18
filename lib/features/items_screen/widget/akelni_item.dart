@@ -15,7 +15,7 @@ import '../../favorite/data/model/hive.dart';
 class AkelniItems extends StatefulWidget {
   final List<Items>? items;
 
-  AkelniItems({
+  const AkelniItems({
     super.key,
     this.items,
   });
@@ -133,7 +133,7 @@ class _AkelniItemsState extends State<AkelniItems> {
                                             )
                                           ],
                                         ),
-                                        backgroundColor: Colors.red,
+                                        backgroundColor: Colors.redAccent,
                                       );
                                       ScaffoldMessenger.of(context)
                                           .showSnackBar(snackBar);
@@ -146,8 +146,26 @@ class _AkelniItemsState extends State<AkelniItems> {
                                               price: item.price,
                                               image: item.image));
 
-                                      const snackBar = SnackBar(
-                                        content: Row(
+                                      // const snackBar = SnackBar(
+                                      //   content: Row(
+                                      //     mainAxisAlignment:
+                                      //         MainAxisAlignment.spaceAround,
+                                      //     children: [
+                                      //       Text(AppStrings
+                                      //           .successfullyAddedToFavorites),
+                                      //       Icon(
+                                      //         Icons.done_outline_sharp,
+                                      //         color: Colors.white,
+                                      //       )
+                                      //     ],
+                                      //   ),
+                                      //   backgroundColor:
+                                      //       Color.fromARGB(255, 226, 78, 41),
+                                      // );
+                                      ////// anmeted icon
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(SnackBar(
+                                        content: const Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceAround,
                                           children: [
@@ -159,11 +177,8 @@ class _AkelniItemsState extends State<AkelniItems> {
                                             )
                                           ],
                                         ),
-                                        backgroundColor: Colors.blue,
-                                      );
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(snackBar);
-                                      // setState(() {});
+                                        backgroundColor: ColorsManager.grey,
+                                      ));
                                     }
                                   },
                                   icon: Icon(
@@ -185,92 +200,3 @@ class _AkelniItemsState extends State<AkelniItems> {
     );
   }
 }
-
-
-// Padding(
-//       padding: const EdgeInsets.all(8.0),
-//       child: ClipRRect(
-//         borderRadius: BorderRadius.circular(20.0).w,
-//         child: InkWell(
-//           onTap: () {
-//             Navigator.pushNamed(context, RoutersName.itemsDetilsScreen,
-//                 arguments: widget.item);
-//       },
-//       child: _isLoading
-//           ? Image.asset(
-//               ImagesAssets.loading,
-//               width: double.infinity,
-//               height: double.infinity,
-//               fit: BoxFit.cover,
-//             )
-//           : GridTile(
-//               child: Container(
-//                 color: ColorsManager.grey,
-//                 child: FadeInImage.assetNetwork(
-//                   width: double.infinity,
-//                   height: double.infinity,
-//                   placeholder: ImagesAssets.loading,
-//                   image: widget.item.image.toString(),
-//                   fit: BoxFit.cover,
-//                 ),
-//               ),
-//               footer: Container(
-//                 width: double.infinity,
-//                 padding:
-//                     EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.w),
-//                 color: ColorsManager.primary,
-//                 alignment: Alignment.bottomCenter,
-//                 child: Row(
-//                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-//                   children: [
-//                     RichText(
-//                       textAlign: TextAlign.center,
-//                       text: TextSpan(
-//                         children: [
-//                           TextSpan(
-//                               text: "${widget.item.title} \n".tr(context),
-//                               style: TextStyles.font16WhiteSemiBold),
-//                           TextSpan(
-//                               text: '${widget.item.price}'.tr(context),
-//                               style: TextStyles.font16WhiteSemiBold),
-//                           TextSpan(
-//                               text: " \$",
-//                               style: TextStyles.font16WhiteSemiBold),
-//                         ],
-//                       ),
-//                     ),
-// IconButton(
-//           onPressed: () async {
-//         ScaffoldMessenger.of(context).clearSnackBars();
-//         if (widget.isFavorite) {
-//           await box.delete(index);
-//           const snackBar = SnackBar(
-//             content: Text("removed"),
-//             backgroundColor: Colors.red,
-//           );
-//           ScaffoldMessenger.of(context)
-//               .showSnackBar(snackBar);
-//         } else {
-//           await box.put(widget.items![index].id,
-//               widget.items![index].title);
-//           const snackBar = SnackBar(
-//             content: Text("sucess"),
-//             backgroundColor: Colors.blue,
-//           );
-//           ScaffoldMessenger.of(context)
-//               .showSnackBar(snackBar);
-//         }
-//       },
-//       icon: Icon(
-//           widget.isFavorite
-//               ? Icons.favorite
-//               : Icons.favorite_outline,
-//           color: ColorsManager.red),
-// ),
-//                   ],
-//                 ),
-//               ),
-//             ),
-//     ),
-//   ),
-// );

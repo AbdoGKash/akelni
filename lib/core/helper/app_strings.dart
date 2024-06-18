@@ -90,8 +90,12 @@ class AppStrings {
   static const String doYouWantToLogout = "Do you want to logout ?";
   static const String no = "No";
   static const String yes = "Yes";
+  static const String favorite = "Favorite";
+  static const String cart = "Cart";
+  static const String addedToCartSuccessfully = "Added to cart successfully";
 }
 
 class HiveDB {
   static const favorite = "Favorite";
+  static const cart = "Cart";
 }

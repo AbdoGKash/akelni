@@ -9,6 +9,7 @@ Future<void> main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(ItemsFavoriteAdapter());
   await Hive.openBox<ItemsFavorite>(HiveDB.favorite);
+  await Hive.openBox<ItemsFavorite>(HiveDB.cart);
   initGetIt();
   runApp(const AkelniApp());
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/helper/app_strings.dart';
 import '../../../../core/routing/routers_name.dart';
@@ -35,11 +37,27 @@ class HomeTopBar extends StatelessWidget {
             backgroundColor: ColorsManager.ligtherGrey,
             radius: 25,
             child: Icon(
-              Icons.favorite_outline,
+              Icons.favorite,
               color: ColorsManager.primary,
             ),
           ),
-        )
+        ),
+        SizedBox(
+          width: 20.w,
+        ),
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, RoutersName.cartScreen);
+          },
+          child: CircleAvatar(
+            backgroundColor: ColorsManager.ligtherGrey,
+            radius: 25,
+            child: Icon(
+              FontAwesomeIcons.cartShopping,
+              color: ColorsManager.primary,
+            ),
+          ),
+        ),
       ],
     );
   }

@@ -35,7 +35,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: const CustomAppBar(
+        textTitel: AppStrings.favorite,
+      ),
       body: ValueListenableBuilder(
         valueListenable: Hive.box<ItemsFavorite>(HiveDB.favorite).listenable(),
         builder: (context, box, child) {

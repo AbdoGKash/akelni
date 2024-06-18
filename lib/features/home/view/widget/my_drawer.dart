@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/helper/language/app_localizations.dart';
 import 'package:flutter_application_1/core/theming/text_styel.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/helper/app_strings.dart';
 import '../../../../../core/theming/colors.dart';
 import '../../../../core/routing/routers_name.dart';
@@ -28,12 +29,6 @@ class MyDrawer extends StatelessWidget {
               child: const BuildDrawerHeader(),
             ),
           ),
-          BuildDrawerListItem(
-            leadingIcon: Icons.person,
-            title: AppStrings.myProfile.tr(context),
-            onTap: () {},
-          ),
-          buildDrawerListItemsDivider(),
           const ChangeLangBloc(),
           buildDrawerListItemsDivider(),
           buildDrawerListItemsDivider(),
@@ -52,8 +47,8 @@ class MyDrawer extends StatelessWidget {
               _showLogoutDialog(context);
             },
           ),
-          const SizedBox(
-            height: 50,
+          SizedBox(
+            height: 120.h,
           ),
           ListTile(
             leading: Text(

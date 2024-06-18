@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/theming/colors.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({super.key});
+  final String textTitel;
+  const CustomAppBar({super.key, required this.textTitel});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text("Favorites"),
+      title: Text(textTitel),
       backgroundColor: ColorsManager.primary,
       centerTitle: true,
       foregroundColor: ColorsManager.white,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../../../../../core/theming/colors.dart';
+import 'package:flutter_application_1/core/helper/images_assets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/theming/text_styel.dart';
 
 class BuildDrawerHeader extends StatelessWidget {
@@ -11,21 +10,20 @@ class BuildDrawerHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(
+          height: 20.h,
+        ),
         Container(
-            padding: const EdgeInsetsDirectional.fromSTEB(70, 10, 70, 10),
-            child: Icon(
-              FontAwesomeIcons.user,
-              size: 70,
-              color: ColorsManager.white,
-            )),
+          padding: const EdgeInsetsDirectional.fromSTEB(70, 10, 70, 10),
+          child: const CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(ImagesAssets.me),
+          ),
+        ),
         Text('Abdo', style: TextStyles.font16WhiteSemiBold),
         const SizedBox(
           height: 5,
         ),
-        Text(
-          'abdoflutter@gamil.com',
-          style: TextStyles.font16WhiteSemiBold,
-        )
       ],
     );
   }

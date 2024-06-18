@@ -41,10 +41,10 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: ColorsManager.black,
   );
-  static TextStyle font13BlackW300 = TextStyle(
+  static TextStyle font13GreykW300 = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeight.w300,
-    color: ColorsManager.black,
+    color: ColorsManager.grey,
   );
   static TextStyle font14Gray200 = TextStyle(
     fontSize: 14.sp,

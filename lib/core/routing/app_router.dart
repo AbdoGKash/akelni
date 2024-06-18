@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/injection.dart';
+import 'package:flutter_application_1/features/cart/cart_screen.dart';
 import 'package:flutter_application_1/features/favorite/favorite_screen.dart';
 import 'package:flutter_application_1/features/home/data/model/home_model.dart';
 import 'package:flutter_application_1/features/home/logic/cubit/home_cubit.dart';
@@ -73,6 +74,10 @@ class AppRouter {
       case RoutersName.favoriteScreen:
         return MaterialPageRoute(
           builder: (_) => const FavoritesScreen(),
+        );
+      case RoutersName.cartScreen:
+        return MaterialPageRoute(
+          builder: (_) => const CartScreen(),
         );
       case RoutersName.checkout:
         return MaterialPageRoute(

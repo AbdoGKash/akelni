@@ -19,7 +19,7 @@ class AlreadyHaveAccountText extends StatelessWidget {
           text: TextSpan(children: [
             TextSpan(
                 text: AppStrings.alreadyHaveAccount,
-                style: TextStyles.font13BlackW300),
+                style: TextStyles.font13GreykW300),
             TextSpan(
                 text: AppStrings.login.tr(context),
                 recognizer: TapGestureRecognizer()

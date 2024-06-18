@@ -18,7 +18,7 @@ class DontHaveAccountText extends StatelessWidget {
           text: TextSpan(children: [
             TextSpan(
                 text: AppStrings.doNotHaveAccount,
-                style: TextStyles.font13BlackW300),
+                style: TextStyles.font13GreykW300),
             TextSpan(
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
