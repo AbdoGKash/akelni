@@ -11,9 +11,17 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 * **Networking :**<br>
   Dio : [Dio](https://pub.dev/packages/dio) | [pretty_dio_logger](https://pub.dev/packages/pretty_dio_logger)<br>
   Retrofit & Retrofit Generator : [Retrofit](https://pub.dev/packages/retrofit) | [Retrofit Generator](https://pub.dev/packages/retrofit_generator)
+* **Code Generation and Serialization :** [json_annotation](https://pub.dev/packages/json_annotation) | [json_serializable](https://pub.dev/packages/json_serializable) | [freezed](https://pub.dev/packages/freezed) | [freezed_annotation](https://pub.dev/packages/freezed_annotation) | [build_runner](https://pub.dev/packages/build_runner)<br>
 * **dependency injection :** [get_it](https://pub.dev/packages/get_it)<br>
+* **check enternet :** [connectivity_plus](https://pub.dev/packages/connectivity_plus)<br>
+* **Caching :** [shared_preferences](https://pub.dev/packages/shared_preferences)<br>
+* **Local Database :** [hive_flutter](https://pub.dev/packages/hive_flutter/versions) | [hive_generator](https://pub.dev/packages/hive_generator)<br>
 * **responsive app :** [flutter_screenutil](https://pub.dev/packages/flutter_screenutil)<br>
 * **splash screen :** [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)<br>
+* **Images and Animation Images :** [lottie](https://pub.dev/packages/lottie) | [flutter_svg](https://pub.dev/packages/flutter_svg)<br>
+* **More icon :** [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter)<br>
+* **launching a URL :** [url_launcher](https://pub.dev/packages/url_launcher)<br>
+* **payment :** [flutter_paypal_checkout](https://pub.dev/packages/flutter_paypal_checkout/example)
 
 
 
