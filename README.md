@@ -40,23 +40,22 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 * Social Media : Access the app's social media pages through provided links.
 * Logout: Securely log out of your account when you're done.
 
-# splash screen 
+<img src="" width="200">
+# 🎨 UI
 
-This is a native splash screen and the package used is flutter_native_splash.
 
-![Screenshot_20240602_222251](https://github.com/AbdoGKash/akelni/assets/160290297/4fc3f325-2795-4a2c-9056-e9e042c384c8)
+### Splash Screen 
+<img src="https://github.com/AbdoGKash/akelni/assets/160290297/4fc3f325-2795-4a2c-9056-e9e042c384c8" width="200">
 
-# onboarding screen 
-![Screenshot_20240609_203646](https://github.com/AbdoGKash/akelni/assets/160290297/e8256502-5325-4da8-b28b-d92745c4fdde)
+### Onboarding Screen 
+<img src="https://github.com/AbdoGKash/akelni/assets/160290297/e8256502-5325-4da8-b28b-d92745c4fdde" width="200">
 
-# Login screen
-![Screenshot_20240609_203656](https://github.com/AbdoGKash/akelni/assets/160290297/5a4219c3-5296-44ea-9c5d-ec08998e3544)
+### Register Screen
+<img src="https://github.com/AbdoGKash/akelni/assets/160290297/5a4219c3-5296-44ea-9c5d-ec08998e3544" width="200">
+<img src="https://github.com/AbdoGKash/akelni/assets/160290297/27ea0b6e-f4cc-4b35-8995-a63b414c15d3" width="200">
 
-# Sign up screen
-![Screenshot_20240609_203821](https://github.com/AbdoGKash/akelni/assets/160290297/27ea0b6e-f4cc-4b35-8995-a63b414c15d3)
 
-# Home screen
-![Screenshot_20240609_203753](https://github.com/AbdoGKash/akelni/assets/160290297/c788c719-cd20-4dc3-a144-d18fba135c61)
+### Home screen
 
 # Contribute
 We welcome contributions from developers! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request. Let's work together to make food ordering effortless and enjoyable!
