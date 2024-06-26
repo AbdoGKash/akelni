@@ -1,7 +1,21 @@
-# akelni
+# 🚀 Welcome to the Akelni App repository! 
 
-Welcome to the Food Ordering App! This is a comprehensive solution for managing food orders online,
-providing a seamless and user-friendly experience for customers. With this app, users can browse menus, place orders.
+Welcome to the Food Ordering App! This mobile application is designed to provide a seamless and enjoyable food ordering experience. Users can easily browse various categories, add items to their favorites, manage their cart, and make purchases with ease. The app also includes several additional features to enhance user experience, such as internet status checks, language and theme customization, and social media links for the program for easy communication.
+
+
+# ✨ Features
+
+* User Authentication: Sign up and log in to your account securely.
+* Home Page: Browse through various food categories and see recommended products.
+* Categories and Products: Each category contains a curated list of products. Add products to your favorites for quick access.
+* Favorites Page: View and manage your favorite products easily.
+* Product Details: Check out detailed information about each product, including its price. Adjust the quantity and size of the product, and the price will update automatically.
+* Cart Management: Add products to your cart, view the cart, adjust quantities, and remove items as needed.
+* Checkout and Payment: Purchase your items securely through PayPal.
+* Internet Status Check: The app monitors and informs you about your internet connection status.
+* Language and Theme Customization: Switch between different languages and themes to personalize your app experience.
+* Social Media : Access the app's social media pages through provided links.
+* Logout: Securely log out of your account when you're done.
 
 # splash screen 
 
