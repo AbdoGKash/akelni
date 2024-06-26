@@ -6,10 +6,8 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 # 🔧 Overview:
 
 * **Built with Dart & Flutter Framework for seamless performance and stunning UI.**<br>
-* **State Management :** Bloc & Flutter Bloc : [Bloc](https://pub.dev/packages/bloc) | [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
-* **Api Integration :**<br>
-  Dio : [Dio](https://pub.dev/packages/dio) | [pretty_dio_logger](https://pub.dev/packages/pretty_dio_logger)<br>
-  Retrofit & Retrofit Generator : [Retrofit](https://pub.dev/packages/retrofit) | [Retrofit Generator](https://pub.dev/packages/retrofit_generator)
+* **State Management :** [Bloc](https://pub.dev/packages/bloc) | [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
+* **Api Integration :** [Dio](https://pub.dev/packages/dio) | [Retrofit](https://pub.dev/packages/retrofit) | [Retrofit Generator](https://pub.dev/packages/retrofit_generator)| [pretty_dio_logger](https://pub.dev/packages/pretty_dio_logger)<br>
 * **Code Generation and Serialization :** [json_annotation](https://pub.dev/packages/json_annotation) | [json_serializable](https://pub.dev/packages/json_serializable) | [freezed](https://pub.dev/packages/freezed) | [freezed_annotation](https://pub.dev/packages/freezed_annotation) | [build_runner](https://pub.dev/packages/build_runner)<br>
 * **dependency injection :** [get_it](https://pub.dev/packages/get_it)<br>
 * **check enternet :** [connectivity_plus](https://pub.dev/packages/connectivity_plus)<br>
