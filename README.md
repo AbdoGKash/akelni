@@ -3,6 +3,20 @@
 Welcome to the Food Ordering App! This mobile application is designed to provide a seamless and enjoyable food ordering experience. Users can easily browse various categories, add items to their favorites, manage their cart, and make purchases with ease. The app also includes several additional features to enhance user experience, such as internet status checks, language and theme customization, and social media links for the program for easy communication.
 
 
+# 🔧 Overview:
+
+* **Built with Dart & Flutter Framework for seamless performance and stunning UI.**<br>
+* **State Management :**<br>
+  Bloc & Flutter Bloc: [Bloc](https://pub.dev/packages/bloc) | [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
+* **Networking :**<br>
+  Dio : [Dio](https://pub.dev/packages/dio) | [pretty_dio_logger](https://pub.dev/packages/pretty_dio_logger)<br>
+  Retrofit & Retrofit Generator : [Retrofit](https://pub.dev/packages/retrofit) | [Retrofit Generator](https://pub.dev/packages/retrofit_generator)
+* **dependency injection :** [get_it](https://pub.dev/packages/get_it)<br>
+* **responsive app :** [flutter_screenutil](https://pub.dev/packages/flutter_screenutil)<br>
+* **splash screen :** [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)<br>
+
+
+
 # ✨ Features
 
 * User Authentication: Sign up and log in to your account securely.
@@ -36,6 +50,8 @@ This is a native splash screen and the package used is flutter_native_splash.
 # Home screen
 ![Screenshot_20240609_203753](https://github.com/AbdoGKash/akelni/assets/160290297/c788c719-cd20-4dc3-a144-d18fba135c61)
 
+# Contribute
+We welcome contributions from developers! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request. Let's work together to make food ordering effortless and enjoyable!
 
 
 
