@@ -49,7 +49,7 @@ class AkelniApp extends StatelessWidget {
                 GlobalCupertinoLocalizations.delegate
               ],
               debugShowCheckedModeBanner: false,
-              initialRoute: RoutersName.homeSreen,
+              initialRoute: RoutersName.login,
               onGenerateRoute: AppRouter.generateRoute,
             );
           },

@@ -7,10 +7,8 @@ import 'package:flutter_application_1/features/login/logic/cubit/login_cubit.dar
 import 'package:flutter_application_1/features/sign_up/data/repo/sign_up_repo.dart';
 import 'package:flutter_application_1/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:get_it/get_it.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 import '../features/chang_language_and_theme/chang_lang_cubit.dart';
-import '../features/favorite/data/model/hive.dart';
 import '../features/internet_connection/internet_connection_cubit.dart';
 import '../features/login/data/repo/login_repo.dart';
 
@@ -24,7 +22,6 @@ Future<void> initGetIt() async {
       () => LoginCubit(getIt())); // registerLazySingleton => error
   getIt.registerLazySingleton<SignUpRepo>(() => SignUpRepo(getIt()));
   getIt.registerFactory<SignUpCubit>(() => SignUpCubit(getIt()));
-  // ================================ home ================================ //
   getIt.registerLazySingleton<ApiServiceHome>(
       () => ApiServiceHome(createAndSetupDio()));
   getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
@@ -33,9 +30,6 @@ Future<void> initGetIt() async {
       () => ChangeLanguageAndThemeCubit());
   getIt.registerFactory<InternetConnectionCubit>(
       () => InternetConnectionCubit());
-  // it should be here ==> await
-  // عشان البرنامج هيكون عايز يبقا ولو حطتها هيا هتخليه يستني
-  // await Hive.openBox<ItemsFavorite>('favor');
 }
 
 Dio createAndSetupDio() {

@@ -9,10 +9,8 @@ class CheckoutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return PaypalCheckout(
       sandboxMode: true,
-      clientId:
-          "AevwpbqkA6FCCwfYISqtqaj2P-lRG0RZUxXgRdi9r2Yg8tkKalpPDfaVe_ALzojFJVl0jbcJriYLRvYE",
-      secretKey:
-          "EL4oab11A9k1OA3VtCo2XOCSLTHDmq9neQemJpe9i4jjfcV8loxfEZc32cihFgVRJfNDoJ5sgyFcGH54",
+      clientId: "XXXXXXXXXXXXXXXXX",
+      secretKey: "XXXXXXXXXXXXXXXXX",
       returnURL: "success.snippetcoder.com",
       cancelURL: "cancel.snippetcoder.com",
       transactions: const [
@@ -26,6 +24,7 @@ class CheckoutPage extends StatelessWidget {
               "shipping_discount": 0
             }
           },
+          ///////////////////// Testing ///////////////////
           "description": "The payment transaction description.",
           "item_list": {
             "items": [
