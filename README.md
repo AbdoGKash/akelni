@@ -101,7 +101,6 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 
 ### Payment screen
 
-<img src="https://github.com/AbdoGKash/akelni/assets/160290297/3ecd1f7f-19a9-4cd9-b450-00cb534b7274" width="200">
 <img src="https://github.com/AbdoGKash/akelni/assets/160290297/40ba2f19-7518-4858-9ee0-03172fa8b0ae" width="200">
 <img src="https://github.com/AbdoGKash/akelni/assets/160290297/9a84ae93-2bf9-47b7-958b-f0264a66de36" width="200">
 
