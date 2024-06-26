@@ -8,6 +8,7 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 * User Authentication: Sign up and log in to your account securely.
 * Home Page: Browse through various food categories and see recommended products.
 * Categories and Products: Each category contains a curated list of products. Add products to your favorites for quick access.
+* Search Functionality: Search for specific products within each category to find exactly what you're looking for.
 * Favorites Page: View and manage your favorite products easily.
 * Product Details: Check out detailed information about each product, including its price. Adjust the quantity and size of the product, and the price will update automatically.
 * Cart Management: Add products to your cart, view the cart, adjust quantities, and remove items as needed.
