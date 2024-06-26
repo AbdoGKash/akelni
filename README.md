@@ -107,9 +107,6 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 <img src="https://github.com/AbdoGKash/akelni/assets/160290297/77cde5e5-e089-4bcb-a760-f9485e67494a" width="200">
 
 
-# Contribute
-We welcome contributions from developers! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request. Let's work together to make food ordering effortless and enjoyable!
-
 
 
 
