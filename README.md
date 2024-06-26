@@ -6,7 +6,7 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 # 🔧 Overview:
 
 * **Built with Dart & Flutter Framework for seamless performance and stunning UI.**<br>
-* **State Management :**Bloc & Flutter Bloc: [Bloc](https://pub.dev/packages/bloc) | [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
+* **State Management :** Bloc & Flutter Bloc : [Bloc](https://pub.dev/packages/bloc) | [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
 * **Networking :**<br>
   Dio : [Dio](https://pub.dev/packages/dio) | [pretty_dio_logger](https://pub.dev/packages/pretty_dio_logger)<br>
   Retrofit & Retrofit Generator : [Retrofit](https://pub.dev/packages/retrofit) | [Retrofit Generator](https://pub.dev/packages/retrofit_generator)
