@@ -38,6 +38,10 @@ Welcome to the Food Ordering App! This mobile application is designed to provide
 * Logout: Securely log out of your account when you're done.
 
 
+# 🌟 App demo video
+
+### [YouTube](https://youtu.be/K32aURwzMeM?si=DH07zMnb29IQ-zlh)
+
 # 🎨 UI
 
 
